@@ -88,13 +88,29 @@ input {
   font-weight: 400;
 }
 
-input:focus-visible {
-  outline-color: red;
-  /* border-color: red; */
+.warning {
+  color: #f4492e;
+  font-family: Spoqa;
+  font-size: 14px;
+  font-weight: 400;
+  display: none;
+}
+
+.wId {
+  margin-bottom: 10px;
 }
 
 [type='text'] {
   margin-bottom: 10px;
+}
+
+input:focus-visible + .warning {
+  outline-color: red;
+  display: block;
+}
+
+input[type='text']:focus-visible {
+  margin-bottom: 0;
 }
 
 input::placeholder {

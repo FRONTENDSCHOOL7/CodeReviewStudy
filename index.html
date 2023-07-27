@@ -12,6 +12,7 @@
 <body>
     <div class="wrapper">
 
+        <!-- 로그인 또는 회원가입 -->
         <header class="header">
             <h1>로그인 또는 회원가입</h1>
             <svg class="cancel" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -20,17 +21,20 @@
             </svg>
         </header>
 
-        <div class="hrs" />
+        <!-- 하단 선 -->
+        <div class="headerLine" />
 
         <main>
             <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
 
+            <!-- input -->
             <input type="text" placeholder="아이디" />
             <p class="warning wId">아이디를 입력해주세요.</p>
             <input type="password" placeholder="비밀번호" />
             <p class="warning">아이디 혹은 비밀번호과 일치하지 않습니다.</p>
 
-            <div class="loginbox">
+            <!-- login 체크박스 -->
+            <form class="loginCheckBox">
                 <input type="checkbox" id="checkbox">
                 <label for="checkbox">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,33 +43,39 @@
                     </svg>
                     <p>로그인 상태 유지</p>
                 </label>
-            </div>
+            </form>
 
             <button class="loginBtn">로그인</button>
 
-            <p class="sign">회원가입<span>|</span>아이디/비밀번호 찾기</p>
+            <!-- 회원가입 / 선 / 아이디/비밀번호 찾기 -->
+            <ul class="sign">
+                <li class="handle">회원가입</li>
+                <li class="verticalLine">|</li>
+                <li class="handle">아이디/비밀번호 찾기</li>
+            </ul>
 
+            <!-- 선 / 또는 / 선 -->
             <div class="or">
                 <div class="line"></div>
                 <p>또는</p>
                 <div class="line"></div>
             </div>
 
-
-            <div class="btnGroup">
-                <button> <img src="./images/Google__G__Logo 1.png" alt="">
+            <!-- 버튼 그룹 -->
+            <footer class="btnGroup">
+                <button class="btn google"> <img src="./images/Google__G__Logo 1.png" alt="">
                     <p>구글 계정으로 로그인</p>
                 </button>
-                <button><img src="./images/facebook.png" alt="">
+                <button class="btn facebook"><img src="./images/facebook.png" alt="">
                     <p>페이스북 계정으로 로그인</p>
                 </button>
-                <button><img src="./images/naver-logo.png" alt="">
+                <button class="btn naver"><img src="./images/naver-logo.png" alt="">
                     <p>네이버 계정으로 로그인</p>
                 </button>
-                <button><img src="./images/message-circle.png" alt="">
+                <button class="btn kakao"><img src="./images/message-circle.png" alt="">
                     <p>카카오톡 계정으로 로그인</p>
                 </button>
-            </div>
+            </footer>
 
         </main>
     </div>

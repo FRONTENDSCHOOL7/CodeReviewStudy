@@ -1,3 +1,4 @@
+/* 폰트 */
 @font-face {
   font-family: 'Spoqa';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
@@ -5,6 +6,7 @@
   font-style: normal;
 }
 
+/* 초기화 */
 body {
   margin: 0;
   height: 100vh;
@@ -23,6 +25,11 @@ button {
   padding: 0;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .wrapper {
   height: 712px;
   border-radius: 10px;
@@ -34,17 +41,18 @@ button {
   flex-direction: column;
 }
 
-.hrs {
-  width: 520px;
-  height: 1px;
-  background-color: #c4c4c4;
-}
-
+/* 헤더 */
 .header {
   padding-top: 20px;
   padding-bottom: 18px;
   display: flex;
   align-items: center;
+}
+
+.headerLine {
+  width: 520px;
+  height: 1px;
+  background-color: #c4c4c4;
 }
 
 main {
@@ -121,7 +129,7 @@ input::placeholder {
   font-weight: 400;
 }
 
-.loginbox {
+.loginCheckBox {
   display: flex;
   padding-top: 16px;
   gap: 8px;
@@ -152,6 +160,8 @@ input::placeholder {
 }
 
 .sign {
+  display: flex;
+  gap: 12px;
   padding-left: 134px;
   padding-bottom: 30px;
 
@@ -161,14 +171,15 @@ input::placeholder {
   font-weight: 400;
 }
 
-.sign span {
+.sign .verticalLine {
   color: #767676;
   font-family: Spoqa;
   font-size: 14px;
   font-weight: 400;
+}
 
-  padding-left: 12px;
-  padding-right: 12px;
+.sign .handle {
+  cursor: pointer;
 }
 
 .or {
@@ -194,11 +205,10 @@ input::placeholder {
   row-gap: 10px;
 }
 
-.btnGroup button {
+.btnGroup .btn {
   width: 472px;
   height: 50px;
   border-radius: 5px;
-  border: 1px solid #767676;
   background: #fff;
 
   display: flex;
@@ -215,6 +225,22 @@ input::placeholder {
   font-weight: 500;
 
   cursor: pointer;
+}
+
+.google {
+  border: 1px solid #767676;
+}
+
+.facebook {
+  border: 1px solid #2d9cdb;
+}
+
+.naver {
+  border: 1px solid #00bf18;
+}
+
+.kakao {
+  border: 1px solid #f2c94c;
 }
 
 .btnGroup button p {

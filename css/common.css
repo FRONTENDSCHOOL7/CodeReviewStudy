@@ -1,0 +1,52 @@
+/* Reset CSS */
+body {
+  margin: unset;
+}
+ul {
+  padding: unset;
+  margin: unset;
+  list-style: none;
+}
+h1,
+p {
+  margin: unset;
+  font: unset;
+}
+a {
+  color: unset;
+  text-decoration: unset;
+  outline: unset;
+}
+input {
+  padding: unset;
+}
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  padding: unset;
+  cursor: pointer;
+}
+
+/* CSS */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

@@ -1,3 +1,4 @@
+h1,
 h2,
 p,
 strong {
@@ -35,15 +36,25 @@ body {
   position: relative;
 }
 .header {
-  text-align: center;
-  background-image: url(./images/close.png);
+  display: flex;
+  /* justify-content: space-between; */
+  margin: auto;
+  /* background-image: url(./images/close.png);
   background-repeat: no-repeat;
   background-position: 480px;
-  background-size: 16px;
+  background-size: 16px; */
   padding-top: 20px;
   padding-bottom: 18px;
   border-bottom: 1px solid #c4c4c4;
   font-weight: 500;
+}
+.header img {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
 }
 .welcome {
   width: fit-content;
@@ -100,7 +111,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin-left: 28px;
-  padding: 6px 0 10px;
+  padding: 6px 0 20px;
   opacity: 1;
 }
 .-pw:focus ~ .strong.two {
@@ -108,8 +119,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin-left: 28px;
-  padding: 6px 0 10px;
-  padding: 6px 0 10px;
+  padding: 10px 0 12px;
   opacity: 1;
 }
 .txt-hide {
@@ -173,6 +183,9 @@ body {
   font-weight: 400;
   margin: 20px;
   gap: 10px;
+}
+.Atag a {
+  cursor: pointer;
 }
 .or {
   display: flex;

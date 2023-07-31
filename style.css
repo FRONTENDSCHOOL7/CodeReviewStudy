@@ -80,19 +80,19 @@ body {
   border-radius: 5px;
   font-size: 16px;
 }
-.-id {
+.id {
   padding-left: 16px;
   box-sizing: border-box;
   font-weight: 400;
   border: 1px solid #c4c4c4;
 }
-.input:focus.-id {
+.input:focus.id {
   outline: 1px solid red;
 }
-.input:focus.-pw {
+.input:focus.pw {
   outline: 1px solid red;
 }
-.-pw {
+.pw {
   padding-left: 16px;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
@@ -106,7 +106,7 @@ body {
   margin-left: 28px; */
   opacity: 0;
 }
-.-id:focus ~ .strong.one {
+.id:focus ~ .strong.one {
   color: #f4492e;
   font-size: 14px;
   font-weight: 400;
@@ -114,7 +114,7 @@ body {
   padding: 6px 0 20px;
   opacity: 1;
 }
-.-pw:focus ~ .strong.two {
+.pw:focus ~ .strong.two {
   color: #f4492e;
   font-size: 14px;
   font-weight: 400;
@@ -129,9 +129,12 @@ body {
   clip-path: inset(50%);
 }
 .labl-hold {
+  display: inline block;
   position: relative;
   color: #767676;
+  /* cursor: pointer; */
 }
+
 .labl-hold::before {
   display: inline-block;
   content: "";
@@ -140,6 +143,7 @@ body {
   margin-right: 10px;
   margin-left: 28px;
   background: url(./images/check-box-off.png) 0 0/22px no-repeat;
+  cursor: pointer;
   vertical-align: -5px;
 }
 
@@ -152,6 +156,7 @@ body {
   height: 22px;
   opacity: 0;
   background: url(./images/check-box-on.png) 0 0/22px no-repeat;
+  cursor: pointer;
   transition: all 0.1s ease;
 }
 .inp-Hold:checked + .labl-hold::after {

@@ -3,6 +3,7 @@
 
 :root {
   --text-color: #767676;
+  --title-color: black;
   --border-color: #c4c4c4;
   --warn-color: #f4492e;
   --button-color: #2f80ed;
@@ -68,17 +69,19 @@ body {
 }
 /* header */
 .header {
-  box-sizing: border-box;
+  display: flex;
   border-bottom: 1px solid var(--border-color);
-  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 .header img {
-  float: right;
   width: 16px;
-  padding: 5px 24px 5px 0;
+  position: absolute;
+  right: 24px;
+  top: 23px;
 }
 .header .title {
-  color: black;
+  color: var(--title-color);
   font-weight: 500;
   padding: 20px 0;
 }
@@ -90,7 +93,7 @@ body {
   margin-bottom: 36px;
 }
 .section1 .subtitle {
-  color: black;
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 500;
 }
@@ -107,12 +110,12 @@ body {
 }
 /* warn*/
 .section1 .input-id {
-  border: 2px solid #f4492e;
+  border: 2px solid var(--warn-color);
 }
 [class^="warn"] {
   box-sizing: border-box;
   padding: 6px 0 10px 0.3em;
-  color: #f4492e;
+  color: var(--warn-color);
   font-size: 14px;
 }
 /* section1 custom-check-box */

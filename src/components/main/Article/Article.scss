@@ -1,0 +1,121 @@
+.cardArticle {
+  background: #fff;
+
+  margin: 1.75rem;
+
+  border-radius: 0.9375rem;
+  border: 2px solid #bdbdbd;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1.44rem;
+
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.card {
+  border-radius: 0.625rem;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+[alt='poster'] {
+  margin: 1.25rem 1.25rem 0 1.25rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--gray-4, #bdbdbd);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1.12rem;
+  gap: 0.31rem;
+}
+
+.title {
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+
+  padding-left: 1.25rem;
+  padding-top: 0.69rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.infoPadding {
+  padding-right: 0.31rem;
+}
+
+.subjectGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.subject {
+  padding-right: 2.62rem;
+}
+
+.type {
+  color: #828282;
+  font-family: Noto Sans KR;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.content {
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.btnGroup {
+  display: flex;
+}
+
+.btnTicketing,
+.btnPreview {
+  background-color: #f2f2f2;
+  width: 100%;
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 41px;
+  padding-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.btnTicketing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0 10px;
+  border: 1px solid #bdbdbd;
+  cursor: pointer;
+  &:hover {
+    background-color: #f2adce;
+  }
+}
+
+.btnPreview {
+  border-radius: 0 0 10px 0;
+  border: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[alt='playBtn'] {
+  margin-right: 0.13rem;
+}

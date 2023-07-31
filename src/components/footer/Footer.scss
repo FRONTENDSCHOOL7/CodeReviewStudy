@@ -1,0 +1,63 @@
+footer {
+  width: 100%;
+  height: 13.3125rem;
+
+  background-color: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapperTop,
+.wrapperBottom {
+  width: 74.3125rem;
+}
+
+.wrapperBottom {
+  display: flex;
+  padding-top: 2.25rem;
+}
+
+.footerLogo {
+  margin-left: auto;
+  color: #4f4f4f;
+  font-family: Noto Sans KR;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.top {
+  display: flex;
+  padding-top: 3.31rem;
+  padding-bottom: 2.63rem;
+  justify-content: space-between;
+}
+
+.imgGroup {
+  display: flex;
+}
+
+.footerInfo {
+  color: #4f4f4f;
+  font-family: Noto Sans KR;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.footerInfo > span {
+  font-weight: 700;
+}
+
+.footerSVG:hover {
+  transform: scale(1.3);
+}
+
+h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

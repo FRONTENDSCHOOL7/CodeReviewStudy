@@ -1,28 +1,37 @@
-# 멋쟁이사자처럼 프론트엔드 스쿨 7기 - 코드리뷰 스터디
+<h1> 제주코딩베이스캠프 파이널 코딩테스트 정글 시네마 </h1>
 
-## 🛠 Branch name 컨벤션
-**branch 목록을 볼 때 가독성을 위하여 컨벤션을 지정합니다.**
+## 💡 프로젝트 실행 방법
+
 ```
-branch 이름은 '이슈 번호-본인 이름' 으로 작성합니다.
-본인 이름은 카멜 케이스로 작성합니다.
-
-카멜 케이스
-- 첫 글자는 소문자
-- 중간 글자는 대문자
-
-예시) 1-byeongMin
+git clone https://github.com/merrybmc/jungleCinema.git
+npm install
+npm start
 ```
+<br/>
 
-## ⭐️ Pull request title 컨벤션
+## 📌 배포 링크
+http://junglecinema.s3-website-us-east-1.amazonaws.com/
+<br />
+<br />
+
+## 📜 폴더 구조
 ```
-pull request의 제목은 '이슈 이름-본인 이름' 으로 작성합니다.
-
-예시) 구현 과제 - 로그인/회원가입 모달 - 병민
-```
-
-## ✏ Commit 컨벤션
-```
-Commit을 할 때 '[이슈 번호] 구현 내용' 으로 작성합니다.
-
-예시) [#1] 로그인 모달 및 기능 구현
+📄 src
+├── components
+│   ├── footer
+│   │   ├── footer.jsx
+│   │   └── footer.scss
+│   ├── main
+│   │   ├── main
+│   │   │   ├── main.jsx
+│   │   │   └── main.scss
+│   │   ├── Article
+│   │   │   ├── article.jsx
+│   │   │   └── article.scss
+├── pages
+│   ├── Mainpage.jsx
+│   └── Mainpage.scss
+├── App.js
+├── index.js
+└── index.scss
 ```

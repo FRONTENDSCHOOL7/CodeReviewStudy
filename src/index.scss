@@ -1,0 +1,38 @@
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+ol,
+li,
+article,
+footer,
+header,
+menu,
+nav,
+img,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  list-style: none;
+  vertical-align: top;
+}
+
+button {
+  border: none;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: 'Noto Sans KR', sans-serif;
+}

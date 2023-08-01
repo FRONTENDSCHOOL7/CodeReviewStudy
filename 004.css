@@ -3,7 +3,8 @@
 h1,
 h2,
 p,
-input {
+input,
+form {
   margin: 0;
   padding: 0;
 }
@@ -85,12 +86,12 @@ header h1 {
 }
 
 .login-input {
-  padding: 0 12px;
+  margin: 0 15px;
   text-align: center;
 }
 
 .login-input input {
-  width: calc(100% - 46px);
+  width: calc(100% - 20px);
   height: 50px;
 
   border-radius: 5px;
@@ -98,6 +99,8 @@ header h1 {
   background: #fff;
   margin-bottom: 10px;
   padding: 0 15px;
+  padding-top: 3px;
+  box-sizing: border-box;
 }
 
 .login-input input::placeholder {
@@ -113,35 +116,26 @@ header h1 {
 }
 
 .lg-continue {
-  margin: 7px 0 0 24px;
+  margin: 7px 0 0 20px;
   position: relative;
 
   color: #767676;
 }
 
-.lg-continue::before {
-  display: inline-block;
-  content: "";
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
-  background: url("./img/check-box.svg") 0 0/22px no-repeat;
-
+.check_svg {
   position: relative;
   top: 5px;
+  margin-right: 5px;
 }
 
-.lg-continue::after {
-  content: "";
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
-  background: url("./img/check-box(2).svg") 0 0/22px no-repeat;
+.txt-hide:checked + .lg-continue .circle {
+  fill: #2f80ed;
+  stroke: #2f80ed;
+}
 
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 20;
+.txt-hide:checked + .lg-continue .path {
+  fill: transparent;
+  stroke: white;
 }
 
 .lg-continue:hover {
@@ -162,7 +156,7 @@ header h1 {
 
   border-radius: 5px;
   background: #2f80ed;
-  margin: 20px 21px;
+  margin: 20px 23px;
 
   color: #fff;
   font-size: 18px;

@@ -85,16 +85,19 @@ header h1 {
 }
 
 .login-input {
-  padding: 0 24px;
+  padding: 0 12px;
+  text-align: center;
 }
 
 .login-input input {
-  width: 472px;
+  width: calc(100% - 46px);
   height: 50px;
 
   border-radius: 5px;
   border: 1px solid #c4c4c4;
   background: #fff;
+  margin-bottom: 10px;
+  padding: 0 15px;
 }
 
 .login-input input::placeholder {
@@ -103,16 +106,10 @@ header h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
-  padding: 15px;
 }
 
 .login-input input:focus {
   outline-color: #f4492e;
-}
-
-.login-input input {
-  margin-bottom: 10px;
 }
 
 .lg-continue {
@@ -120,18 +117,6 @@ header h1 {
   position: relative;
 
   color: #767676;
-}
-
-.lg-continue input {
-  clip-path: inset(50%);
-  margin-left: -20px;
-}
-
-.lg-continue label {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .lg-continue::before {
@@ -190,11 +175,10 @@ header h1 {
   display: flex;
   justify-content: center;
   gap: 12px;
+  align-items: center;
 }
 
-.join a:nth-child(1)::after {
-  content: "|";
-  margin: 10px 0 10px 10px;
+.join span {
   color: #767676;
 }
 
@@ -212,7 +196,7 @@ header h1 {
   font-style: normal;
   font-weight: 400;
 
-  padding: 21px 0 10px 0;
+  padding: 20px 0 10px 0;
   text-align: center;
 }
 

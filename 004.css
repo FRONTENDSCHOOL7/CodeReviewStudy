@@ -119,12 +119,21 @@ header h1 {
   display: none;
 }
 
-.login-input input:focus {
+input:focus {
   outline-color: #f4492e;
+  margin: 0;
 }
 
-.login-input input:focus + p {
+input:focus + p {
   display: block;
+}
+
+input:focus + .id {
+  padding: 6px 0 10px;
+}
+
+input:focus + .false {
+  padding: 10px 0 13px;
 }
 
 .lg-continue {

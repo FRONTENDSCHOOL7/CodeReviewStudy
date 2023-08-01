@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="login-top">
+        <h1>로그인 또는 회원가입</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+        >
+          <path d="M1.15918 16.9999L17 1.15915" stroke="#767676" />
+          <path d="M16.8408 16.8408L1.00003 1" stroke="#767676" />
+        </svg>
+      </header>
+      <!-- //header -->
+      <!-- main -->
+      <main class="login-form">
+        <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+        <form>
+          <input type="text" class="user-id" placeholder="아이디" />
+          <p class="warning-id">아이디를 입력해 주세요.</p>
+          <input type="password" class="user-pw" placeholder="비밀번호" />
+          <p class="warning-pw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+          <div class="keep-wrap">
+            <input type="checkbox" id="inpHold" class="inphold txt-hide" />
+            <label for="inpHold" class="lable-hold">로그인 상태 유지</label>
+          </div>
+          <button class="btn-login" type="submit">로그인</button>
+        </form>
+        <div class="find-wrap">
+          <a href="#" class="join">회원가입</a>
+          <span>|</span>
+          <a href="#" class="find-id-pw">아이디/비밀번호 찾기</a>
+        </div>
+      </main>
+      <!-- //main -->
+      <div class="or">
+        <hr />
+        <span>또는</span>
+        <hr />
+      </div>
+      <ul class="login-sns-group">
+        <li class="icon-gl">
+          <a href="#">구글 계정으로 로그인</a>
+        </li>
+        <li class="icon-fb">
+          <a href="#">페이스북 계정으로 로그인</a>
+        </li>
+        <li class="icon-naver">
+          <a href="#">네이버 계정으로 로그인</a>
+        </li>
+        <li class="icon-kakao">
+          <a href="#">카카오톡 계정으로 로그인</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -138,6 +138,11 @@ section {
     border: 1px solid #C4C4C4;
     border-radius: 5px;
     box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form .input.pw {
+    margin-bottom: 16px;
 }
 
 .form .input:hover {
@@ -151,14 +156,21 @@ section {
 .normal-login .form p {
     font-size: 14px;
     color: #F4492E;
+    display: none;
 }
 
-.normal-login .id-alert {
+.form .input:focus-visible + .id-alert {
     margin: 6px auto 10px 4px;
+    display: block;
 }
 
-.normal-login .pw-alert {
+.form .input:focus-visible+ .pw-alert {
     margin: 10px auto 12px 4px;
+    display: block;
+}
+
+.form input[type='text']:focus-visible {
+    margin-bottom: 0;
 }
 
 .normal-login .hide {
@@ -366,7 +378,7 @@ section {
 }
 
 /* ~ 최대 765px 까지 스타일 적용 */
-@media (max-height: 765px) {
+@media (max-height: 750px) {
     .section {
         max-width: 100vw;
         width: 90vw;
@@ -382,6 +394,7 @@ section {
     }
     .normal-login .form > #input-id {
         width: 95%;
+        margin-bottom: 0;
         grid-area: id;
     }
     .normal-login .form > .id-alert {
@@ -389,6 +402,7 @@ section {
     }
     .normal-login .form > #input-pw {
         width: 95%;
+        margin-bottom: 0;
         grid-area: pw;
     }
     .normal-login .form > .pw-alert {

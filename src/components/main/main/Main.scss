@@ -1,0 +1,66 @@
+main {
+  max-width: 66.25rem;
+  background-color: #f2f2f2;
+
+  border-radius: 0.9375rem;
+  border: 2px solid #828282;
+
+  margin-bottom: 8.44rem;
+}
+
+.mainHeader {
+  padding-top: 2.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 2.31rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 3.75rem;
+}
+
+.navTitle {
+  color: #828282;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  &:hover {
+    color: #000;
+    font-weight: 900;
+  }
+}
+
+.navTitle.true {
+  color: #000;
+  font-weight: 900;
+}
+
+.imgGroup {
+  gap: 1.37rem;
+}
+
+.imgGroup > img {
+  cursor: pointer;
+}
+
+@media (max-height: 1060px) {
+  main {
+    max-width: 100%;
+  }
+}

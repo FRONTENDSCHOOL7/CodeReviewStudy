@@ -97,9 +97,9 @@ header h1 {
   border-radius: 5px;
   border: 1px solid #c4c4c4;
   background: #fff;
-  margin-bottom: 10px;
   padding: 0 15px;
   padding-top: 3px;
+  margin: 5px 0;
   box-sizing: border-box;
 }
 
@@ -111,8 +111,20 @@ header h1 {
   line-height: normal;
 }
 
+.login-input p {
+  text-align: justify;
+  margin-left: 13px;
+  color: #f4492e;
+  font-size: 14px;
+  display: none;
+}
+
 .login-input input:focus {
   outline-color: #f4492e;
+}
+
+.login-input input:focus + p {
+  display: block;
 }
 
 .lg-continue {

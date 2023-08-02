@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  vertical-align: top;
+}
+
 /* CSS */
 @font-face {
   font-family: "SpoqaHanSansNeo-Regular";

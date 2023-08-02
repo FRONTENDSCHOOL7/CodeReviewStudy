@@ -4,6 +4,8 @@ body {
 }
 
 .login-container {
+  position: relative;
+
   width: 520px;
   margin: auto;
 
@@ -15,21 +17,11 @@ body {
 
 /* 로그인 헤더 */
 .login-header {
-  position: relative;
-
   padding: 20px 0 18px;
   border-bottom: 1px solid #c4c4c4;
 
   text-align: center;
   font-weight: 500;
-}
-
-/* 로그인 닫기 버튼 위치 */
-.login-close-button {
-  position: absolute;
-  top: 50%;
-  right: 22px;
-  transform: translate(0, -50%);
 }
 
 /* 로그인 메인 */
@@ -51,7 +43,7 @@ body {
   margin-bottom: 16px;
 }
 .login-input {
-  width: 440px;
+  width: calc(100% - 30px);
   padding: 15px 16px;
 
   border: 1px solid #c4c4c4;
@@ -83,9 +75,6 @@ body {
 }
 
 /* 로그인 상태 유지 체크박스 */
-.login-state input[type="checkbox"] {
-  display: none;
-}
 .login-state input[type="checkbox"] + label::before,
 .login-state input[type="checkbox"]:checked + label:before {
   content: "";
@@ -174,49 +163,39 @@ body {
 }
 
 .social-login-button {
-  position: relative;
+  display: block;
 
-  width: 472px;
   padding: 15px 0;
   border-radius: 5px;
 
   color: #767676;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px center;
 }
 .google {
   border: 1px solid #767676;
+  background-image: url(../imgs/google.svg);
 }
 .facebook {
   border: 1px solid #2d9cdb;
+  background-image: url(../imgs/facebook.svg);
 }
 .naver {
   border: 1px solid #00bf18;
+  background-image: url(../imgs/naver.svg);
 }
 .kakao {
   border: 1px solid #f2c94c;
-}
-
-/* 소셜 로그인 아이콘 */
-[class|="icon"]::before {
-  content: "";
-
-  position: absolute;
-  top: 11px;
-  left: 12px;
-
-  display: block;
-
-  width: 28px;
-  height: 28px;
-}
-.icon-google::before {
-  background-image: url(../imgs/google.svg);
-}
-.icon-facebook::before {
-  background-image: url(../imgs/facebook.svg);
-}
-.icon-naver::before {
-  background-image: url(../imgs/naver.svg);
-}
-.icon-kakao::before {
   background-image: url(../imgs/kakao.svg);
+}
+
+/* 로그인 닫기 버튼 위치 */
+.login-close-button {
+  position: absolute;
+  /* top: 50%; */
+  top: 22px;
+  right: 24px;
 }

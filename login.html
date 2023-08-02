@@ -13,12 +13,10 @@
       <!-- header -->
       <header class="login-header">
         <h1>로그인 또는 회원가입</h1>
-        <a href="./index.html" class="login-close-button">
-          <img src="./imgs/login-close-button.svg" alt="닫기 버튼" />
-        </a>
       </header>
       <!-- 로그인 -->
-      <main class="login-main">
+      <article class="login-main">
+        <h2 class="a11y-hidden">일반 로그인</h2>
         <p>위니브에서 여러분의 궁금증을 해결하세요! :)</p>
         <form>
           <div class="login-input-group">
@@ -46,17 +44,17 @@
             </div>
           </div>
           <div class="login-state">
-            <input type="checkbox" id="stateCheck" />
+            <input type="checkbox" id="stateCheck" class="a11y-hidden" />
             <label for="stateCheck">로그인 상태 유지</label>
           </div>
           <button class="login-button" type="submit">로그인</button>
         </form>
         <div class="find-user-button-box">
-          <button type="button">회원가입</button>
+          <a>회원가입</a>
           <span>|</span>
-          <button type="button">아이디/비밀번호 찾기</button>
+          <a>아이디/비밀번호 찾기</a>
         </div>
-      </main>
+      </article>
 
       <p class="br">또는</p>
 
@@ -65,27 +63,31 @@
         <h2 class="a11y-hidden">소셜서비스로 로그인</h2>
         <ul class="social-login-group">
           <li>
-            <button class="icon-google social-login-button google">
+            <a href="#" class="social-login-button google">
               구글 계정으로 로그인
-            </button>
+            </a>
           </li>
           <li>
-            <button class="icon-facebook social-login-button facebook">
+            <a href="#" class="social-login-button facebook">
               페이스북 계정으로 로그인
-            </button>
+            </a>
           </li>
           <li>
-            <button class="icon-naver social-login-button naver">
+            <a href="#" class="social-login-button naver">
               네이버 계정으로 로그인
-            </button>
+            </a>
           </li>
           <li>
-            <button class="icon-kakao social-login-button kakao">
+            <a href="#" class="social-login-button kakao">
               카카오톡 계정으로 로그인
-            </button>
+            </a>
           </li>
         </ul>
       </section>
+      <!-- 닫기버튼 -->
+      <a href="./index.html" class="login-close-button">
+        <img src="./imgs/login-close-button.svg" alt="닫기 버튼" />
+      </a>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

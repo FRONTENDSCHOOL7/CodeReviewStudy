@@ -1,0 +1,272 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* ****************     초기설정     **************** */
+body, 
+h1, 
+h2, 
+div, 
+p, 
+button, 
+input, 
+label,
+span,
+a {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F2F2F2;
+	position:absolute;
+  top:50%;
+  left:50%;
+	transform:translate(-50%,-50%);
+}
+
+a {	
+	text-decoration: none;
+	color: inherit;
+}
+
+button:enabled {
+	cursor: pointer;
+}
+
+img {
+	vertical-align: top;
+}
+
+.a11y-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+/* ****************    container    **************** */
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 520px;
+	border-radius: 10px;
+	border: 1px solid #C4C4C4;
+	background: #FFF;
+}
+
+/* ****************  header - 제목  **************** */
+header {
+	position: relative;
+	margin: 0 24px;
+}
+
+header h1 {
+	text-align: center;
+	margin: 20px 0; 
+	font-weight: 500;
+	font-size: 16px;
+}
+
+header .close-btn {
+	position: absolute;
+	background: none;
+	border: none;
+	right: 12px;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+
+.close-btn img {
+	width: 16px;
+	height: 16px;
+}
+
+.underline {
+	width: 100%;
+	height: 1px;
+	flex-shrink: 0;
+	background-color: #C4C4C4;
+}
+
+/* ****************   main - 본문   **************** */
+main {
+	margin: 0 24px;
+}
+main h2 {
+	margin: 26px 0;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+/* ****************    로그인 폼    **************** */
+.login-form {
+	color: #767676;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-insert {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.login-insert input {
+	width: 472px;
+	height: 50px;
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
+	padding: 15px 16px;
+	font-size: 16px;
+}
+
+.warning-id, .warning-match {
+	margin: 6px 0 10px 4px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #F4492E;
+}
+
+.login-hold {
+	display: flex;
+	margin-top: 17px;
+}
+
+.login-hold label {
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+input#login-hold{
+  display:none;
+}
+
+/* 체크하기 전 상태 */
+input#login-hold+label:before{
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url('../images/checkbox.svg');
+  vertical-align: middle;
+	margin-right: 8px;
+}
+
+/* 체크 된 상태 */  
+input#login-hold:checked+label:before{
+  content: '';
+  background-image: url('../images/checkedbox.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.login-btn {
+	width: 472px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.login-form button {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 20px 0;
+	border: none;
+	background: #2F80ED;
+	color: #FFF;
+}
+
+.href-group {
+	margin: 0 auto 10px auto;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.href-group span {
+	margin: 0 12px;
+}
+
+.href-group a:hover {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+/* 구분선 */
+.divider {
+  position: relative;
+  margin: 20px 0px;
+	text-align: center;
+	color: #767676;
+}
+
+.divider::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #C4C4C4;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+}
+
+.divider span {
+	font-size: 14px;
+  padding: 0 10px;
+  background-color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+
+/* ****************   sns 로그인   **************** */
+.btn-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 25px;
+
+}
+.sns-login {
+	background: #FFF;
+	background: none;
+	border: 1px solid #767676;
+	color: #767676;
+}
+
+.login-btn img {
+	width: 28px;
+	height: 28px;
+	margin-left: 12px;
+}
+
+.login-btn span {
+	margin: auto;
+	font-size: 16px;
+}
+
+.login-btn:hover {
+	font-weight: 600;
+	border-width: 3px;
+}
+
+.fb-btn {
+	border: 1px solid #2D9CDB;
+}
+
+.nv-btn {
+	border: 1px solid #00BF18;
+}
+
+.kt-btn {
+	border: 1px solid #F2C94C;
+}
+

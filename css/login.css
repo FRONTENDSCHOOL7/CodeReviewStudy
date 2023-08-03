@@ -1,0 +1,201 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.login-container {
+  position: relative;
+
+  width: 520px;
+  margin: auto;
+
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+
+  background: #fff;
+}
+
+/* 로그인 헤더 */
+.login-header {
+  padding: 20px 0 18px;
+  border-bottom: 1px solid #c4c4c4;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+/* 로그인 메인 */
+.login-main {
+  padding: 26px 24px 30px;
+}
+.login-main > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+/* 아이디,비밀번호 input */
+.login-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+.login-input {
+  width: calc(100% - 30px);
+  padding: 15px 16px;
+
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+
+  font-size: 16px;
+}
+
+/* 아이디,비밀번호 경고 */
+[class^="warnning"] {
+  display: none;
+
+  color: #f4492e;
+  font-size: 14px;
+}
+.warnning-id {
+  margin: 6px 0 0 2px;
+}
+.warnning-user {
+  margin: 10px 0 0 2px;
+}
+
+/* 로그인 상태 유지 */
+.login-state {
+  margin-bottom: 20px;
+
+  color: #767676;
+  font-weight: 500;
+}
+
+/* 로그인 상태 유지 체크박스 */
+.login-state input[type="checkbox"] + label::before,
+.login-state input[type="checkbox"]:checked + label:before {
+  content: "";
+
+  display: inline-block;
+
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  vertical-align: bottom;
+}
+.login-state input[type="checkbox"] + label:before {
+  background-image: url("../imgs/login-checkbox.svg");
+}
+.login-state input[type="checkbox"]:checked + label:before {
+  background-image: url("../imgs/login-checked.svg");
+}
+
+/* 로그인 버튼 */
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  background: #2f80ed;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 회원가입,아이디/비밀번호 찾기 */
+.find-user-button-box {
+  text-align: center;
+}
+.find-user-button-box button {
+  color: #767676;
+  font-size: 14px;
+}
+.find-user-button-box button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.find-user-button-box span {
+  display: inline-block;
+  color: #767676;
+  margin: 0 12px;
+}
+
+/* 또는 */
+.br {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  color: #767676;
+  font-size: 14px;
+}
+.br::before,
+.br::after {
+  content: "";
+  display: inline-block;
+  background-color: #c4c4c4;
+  width: 210px;
+  height: 1px;
+}
+
+/* social login */
+.social-login-container {
+  padding: 19px 24px 25px;
+}
+
+.social-login-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-login-button {
+  display: block;
+
+  padding: 15px 0;
+  border-radius: 5px;
+
+  color: #767676;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px center;
+}
+.google {
+  border: 1px solid #767676;
+  background-image: url(../imgs/google.svg);
+}
+.facebook {
+  border: 1px solid #2d9cdb;
+  background-image: url(../imgs/facebook.svg);
+}
+.naver {
+  border: 1px solid #00bf18;
+  background-image: url(../imgs/naver.svg);
+}
+.kakao {
+  border: 1px solid #f2c94c;
+  background-image: url(../imgs/kakao.svg);
+}
+
+/* 로그인 닫기 버튼 위치 */
+.login-close-button {
+  position: absolute;
+  /* top: 50%; */
+  top: 22px;
+  right: 24px;
+}

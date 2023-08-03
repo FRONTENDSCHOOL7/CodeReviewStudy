@@ -1,0 +1,35 @@
+/* CSS */
+
+.container {
+  width: 500px;
+  padding: 30px;
+  margin: 280px auto 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+
+  background: #fff;
+
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+.text {
+  margin-bottom: 32px;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 17px 0 15px;
+
+  border-radius: 5px;
+  background: #2f80ed;
+
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}

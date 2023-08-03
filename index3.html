@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 또는 회원가입</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="a11y-hidden">로그인 페이지</h1>
+    <article class="box">
+
+        <header>
+            <h2>로그인 또는 회원가입</h2>
+            <button type="button" class="btn-close"><img src="./images/close.png" alt="닫기"></button>
+        </header>
+        <main>
+            <section class="section1">
+                <h3>위니브에서 여러분의 궁금증을 해결하세요! :)</h3>
+                <form class="form">
+                    <div class="login">
+                        <label for="user-id" class="a11y-hidden">아이디</label>
+                        <input id="user-id" type="text" placeholder="아이디">
+                    </div>
+                    <div class="login">
+                        <label for="user-pw" class="a11y-hidden">비밀번호</label>
+                        <input id="user-pw" type="password" placeholder="비밀번호">
+                    </div>
+                    <div class="hold">
+                        <input class="loghold txt-hide" id="inpHold" type="checkbox">
+                        <label class="label-hold" for="inpHold">로그인 상태 유지</label>
+                    </div>
+                    <button type="button" class="btn-login">로그인</button>
+                </form>
+                <strong class="join">회원가입<span class="bar">|</span> 아이디/비밀번호 찾기</strong>
+
+            </section>
+            <section class="section2">
+                <h2 class="a11y-hidden">다른 계정으로 로그인</h2>
+                <strong class="or">또는</strong>
+                <div class="account">
+                    <button type="button" class="icon-google" href="#">
+                        <img class="imgcon" src="./images/icon_google.png" alt="">
+                        <p>구글 계정으로 로그인</p>
+                        <button type="button" class="icon-face" href="#">
+                            <img class="imgcon" src="./images/icon_facebook.png" alt="">
+                            <p>페이스북 계정으로 로그인</p>
+                        </button>
+                        <button type="button" class="icon-naver" href="#">
+                            <img class="imgcon" src="./images/icon_naver.png" alt="">
+                            <p>네이버 계정으로 로그인</p>
+                        </button>
+                        <button type="button" class="icon-kakao" href="#">
+                            <img class="imgcon" src="./images/icon_kakao.png" alt="">
+                            <p>카카오 계정으로 로그인</p>
+                        </button>
+                </div>
+            </section>
+        </main>
+    </article>
+
+</body>
+
+</html>

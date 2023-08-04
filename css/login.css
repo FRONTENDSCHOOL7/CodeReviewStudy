@@ -1,23 +1,9 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 /* ****************     초기설정     **************** */
-body, 
-h1, 
-h2, 
-div, 
-p, 
-button, 
-input, 
-label,
-span,
-a {
-	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	background-color: #F2F2F2;
 	position:absolute;
   top:50%;
@@ -144,9 +130,6 @@ main h2 {
 	cursor: pointer;
 }
 
-input#login-hold{
-  display:none;
-}
 
 /* 체크하기 전 상태 */
 input#login-hold+label:before{

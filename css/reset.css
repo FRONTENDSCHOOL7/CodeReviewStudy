@@ -46,3 +46,18 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+body, 
+h1, 
+h2, 
+div, 
+p, 
+button, 
+input, 
+label,
+span,
+a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

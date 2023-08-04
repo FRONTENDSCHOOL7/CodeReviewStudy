@@ -1,0 +1,266 @@
+/* 폰트 */
+@font-face {
+  font-family: 'Spoqa';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 초기화 */
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+p,
+hr,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.wrapper {
+  height: 712px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 */
+.header {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.headerLine {
+  width: 520px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+main {
+  padding-left: 24px;
+}
+
+h1 {
+  color: #000;
+  font-family: Spoqa;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 188px;
+}
+
+h2 {
+  color: #000;
+  font-family: Spoqa;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-top: 26px;
+}
+
+.cancel {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+input {
+  width: 452px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  padding-left: 16px;
+
+  color: black;
+  font-family: Spoqa;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.warning {
+  color: #f4492e;
+  font-family: Spoqa;
+  font-size: 14px;
+  font-weight: 400;
+  display: none;
+}
+
+.wId {
+  margin-bottom: 10px;
+}
+
+[type='text'] {
+  margin-bottom: 10px;
+}
+
+input:focus-visible + .warning {
+  outline-color: red;
+  display: block;
+}
+
+input[type='text']:focus-visible {
+  margin-bottom: 0;
+}
+
+input::placeholder {
+  padding: 15px 0 15px 0;
+  color: #767676;
+  font-family: Spoqa;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loginCheckBox {
+  display: flex;
+  padding-top: 16px;
+  gap: 8px;
+}
+
+.loginbox p {
+  padding-top: 1px;
+  color: #767676;
+  font-family: Spoqa;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loginBtn {
+  padding: 14px 211px;
+  color: #fff;
+  font-family: Spoqa;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background: #2f80ed;
+
+  cursor: pointer;
+}
+
+.sign {
+  display: flex;
+  gap: 12px;
+  padding-left: 134px;
+  padding-bottom: 30px;
+
+  color: #767676;
+  font-family: Spoqa;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sign .verticalLine {
+  color: #767676;
+  font-family: Spoqa;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sign .handle {
+  cursor: pointer;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.or p {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.line {
+  width: 210px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.btnGroup .btn {
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: #767676;
+  text-align: center;
+  font-family: Spoqa;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.google {
+  border: 1px solid #767676;
+}
+
+.facebook {
+  border: 1px solid #2d9cdb;
+}
+
+.naver {
+  border: 1px solid #00bf18;
+}
+
+.kakao {
+  border: 1px solid #f2c94c;
+}
+
+.btnGroup button p {
+  margin: 0 auto;
+}
+
+[type='checkbox'] {
+  display: none;
+}
+
+[for='checkbox'] {
+  display: flex;
+  gap: 8px;
+}
+
+input[type='checkbox']:checked + label circle {
+  fill: #2f80ed;
+  stroke: #2f80ed;
+}
+
+input[type='checkbox']:checked + label path {
+  stroke: white;
+}

@@ -29,9 +29,16 @@
       <main class="login-form">
         <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
         <form>
-          <input type="text" class="user-id" placeholder="아이디" />
+          <label for="id" class="a11y-hidden">아이디</label>
+          <input type="text" id="id" class="user-id" placeholder="아이디" />
           <p class="warning-id">아이디를 입력해 주세요.</p>
-          <input type="password" class="user-pw" placeholder="비밀번호" />
+          <label for="pw" class="a11y-hidden">비밀번호</label>
+          <input
+            type="password"
+            id="pw"
+            class="user-pw"
+            placeholder="비밀번호"
+          />
           <p class="warning-pw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
           <div class="keep-wrap">
             <input type="checkbox" id="inpHold" class="inphold txt-hide" />

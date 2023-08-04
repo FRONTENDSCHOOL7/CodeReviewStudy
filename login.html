@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<h1>로그인 또는 회원가입</h1>
+			<button type="button" class="close-btn">
+				<img src="images/close.svg" alt="닫기버튼">
+			</button>
+		</header>
+
+		<div class="underline"></div>
+
+		<main>
+			<h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+			<!-- 로그인 폼 -->
+			<form class="login-form">
+				<div class="login-insert">
+					<div>
+						<input type="text" id="login-id" placeholder="아이디">
+						<label for="login-id" class="a11y-hidden">아이디</label>
+						<p class="warning-id">아이디를 입력해 주세요.</p>
+					</div>
+
+					<div>
+						<input type="password" id="login-pw" placeholder="비밀번호">
+						<label for="login-pw" class="a11y-hidden">비밀번호</label>
+						<p class="warning-match">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+					</div>
+				</div>
+
+				<div class="login-hold">
+					<input type="checkbox" id="login-hold" class="a11y-hidden">
+					<label for="login-hold">로그인 상태 유지</label>
+				</div>
+
+				<button type="button" id="login-btn" class="login-btn">로그인</button>
+
+				<div class="href-group">
+					<a href="#">회원가입</a>
+					<span>|</span>
+					<a href="#">아이디/비밀번호 찾기</a>
+				</div>
+			</form>
+
+			<!-- 구분선 -->
+			<div class="divider">
+				<span>또는</span>
+			</div>
+
+			<!-- sns 로그인 -->
+			<div class="btn-group">
+				<a href="https://google.com" class="login-btn sns-login">
+					<img src="images/Google__G__Logo 1.png" alt="google">
+					<span>구글 계정으로 로그인</span>
+				</a>
+				<a href="https://facebook.com" class="login-btn sns-login fb-btn">
+					<img src="images/facebook.png" alt="facebook">
+					<span>페이스북 계정으로 로그인</span>
+				</a>
+				<a href="https://naver.com" class="login-btn sns-login nv-btn">
+					<img src="images/naver-logo.png" alt="naver">
+					<span>네이버 계정으로 로그인</span>
+				</a>
+				<a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" class="login-btn sns-login kt-btn">
+					<img src="images/message-circle.png" alt="kakaotalk">
+					<span>카카오톡 계정으로 로그인</span>
+				</a>
+			</div>
+
+		</main>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script>
+		$(".warning-id").hide();
+		$(".warning-match").hide();
+
+		$("#login-btn").click((e) => {
+			// 아이디 입력 안됐을 때
+			if (!$("#login-id").val()) {
+				console.log("click")
+				$(".warning-id").show();
+				$("#login-id").css({ "border": "2px solid #F4492E" });
+				if ($("#login-id").val() !== $("#login-pw").val()) {
+					$(".warning-match").hide();
+				}
+			}
+			// 아이디 입력 됐을 때
+			else {
+				$(".warning-id").hide();
+				$("#login-id").css({ "border": "1px solid #C4C4C4" });
+				if ($("#login-id").val() !== $("#login-pw").val()) {
+					$(".warning-match").show();
+				}
+				else {
+					$(".warning-match").hide();
+				}
+			}
+		});
+
+
+
+	</script>
+</body>
+
+</html>

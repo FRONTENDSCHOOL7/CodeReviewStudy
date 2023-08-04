@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | 위니브</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="modal-login">
+      <header>
+        <h1>로그인 또는 회원가입</h1>
+      </header>
+      <main>
+        <section class="weniv-login">
+          <h2>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</h2>
+          <form action="#" class="login-form">
+            <input type="text" class="user-id" placeholder="아이디" />
+            <input
+              type="password"
+              class="user-pwd"
+              placeholder="비밀번호"
+              autocomplete="off"
+            />
+            <input type="checkbox" id="inpHold" class="inp-hold txt-hide" />
+            <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+            <button class="login-btn">로그인</button>
+          </form>
+          <div class="login-service">
+            <a href="#" class="join-member">회원가입</a
+            ><a href="#">아이디/비밀번호 찾기</a>
+          </div>
+        </section>
+        <div class="or">또는</div>
+        <section class="social-login">
+          <h3 class="txt-hide">소셜서비스로 로그인</h3>
+          <ul>
+            <li>
+              <a href="#" class="icon-google"
+                ><span>구글 계정으로 로그인</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon-facebook"
+                ><span>페이스북 계정으로 로그인</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon-naver"
+                ><span>네이버 계정으로 로그인</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon-kakaotalk"
+                ><span>카카오톡 계정으로 로그인</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <a href="https://litt.ly/weniv">
+        <img
+          class="modal-close"
+          src="./images/modal-close.png"
+          alt="로그인 모달 닫기"
+      /></a>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

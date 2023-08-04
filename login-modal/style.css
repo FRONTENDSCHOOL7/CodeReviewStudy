@@ -1,0 +1,311 @@
+/* font */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+button,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CSS 적용 */
+body {
+  height: 100vh;
+  font-family: "SpoqaHanSansNeo-Medium";
+  font-size: 16px;
+  color: #767676;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-hide {
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+}
+
+#modal-login {
+  width: 520px;
+  /* height: 712px; */
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  /* background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: 520px 712px;
+  background-position: 0px -2px; */
+}
+
+/* header */
+header {
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+  box-sizing: border-box;
+}
+
+header h1 {
+  word-spacing: 2px;
+  color: #000;
+}
+
+/* main */
+main {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* 위니브 로그인 */
+.weniv-login h2 {
+  font-size: 20px;
+  margin-top: 26px;
+  margin-bottom: 24px;
+  line-height: 24px;
+  color: #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 로그인 폼 아이디, 비밀번호 */
+[class|="user"] {
+  font-family: "SpoqaHanSansNeo-Regular";
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  padding: 13px 0 13px 16px;
+  box-sizing: border-box;
+}
+
+.user-pwd {
+  margin-top: 10px;
+}
+
+/* 에러 메세지 출력 */
+.first-error-msg,
+.second-error-msg {
+  font-family: "SpoqaHanSansNeo-Regular";
+  color: #f4492e;
+  font-size: 14px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.focus {
+  border: 2px solid #f4492e;
+}
+
+/* checkbox 커스텀 */
+.labl-hold {
+  position: relative;
+  margin-top: 14px;
+  margin-left: 4px;
+}
+
+.labl-hold::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  vertical-align: -5px;
+  background: url("./images/check-box.svg");
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.inp-hold:focus-visible + .labl-hold::before {
+  outline: 2px solid black;
+  border-radius: 50%;
+}
+
+.inp-hold:checked + .labl-hold::before {
+  background-image: url("./images/check-box-on.svg");
+}
+
+.login-btn {
+  margin: 20px 0 19px 0;
+  border-radius: 5px;
+  background: #2f80ed;
+  color: #fff;
+  font-size: 18px;
+  font-family: "SpoqaHanSansNeo-Bold";
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.login-service {
+  font-size: 14px;
+  font-family: "SpoqaHanSansNeo-Regular";
+  text-align: center;
+}
+
+.login-service .join-member::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin-left: 13px;
+  margin-right: 13px;
+  vertical-align: -2px;
+  background-color: #767676;
+}
+
+/* 또는 */
+.or {
+  text-align: center;
+  font-size: 14px;
+  font-family: "SpoqaHanSansNeo-Regular";
+  margin: 30px auto 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+/* 소셜 로그인 */
+.social-login {
+  height: 230px;
+  margin-bottom: 20px;
+}
+
+[class^="icon"] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px 0;
+  position: relative;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+[class^="icon"] span {
+  margin-left: 11px;
+}
+
+.icon-google {
+  border: 1px solid #767676;
+  padding-left: 13px;
+}
+
+.icon-facebook {
+  border: 1px solid #2d9cdb;
+  padding-left: 15px;
+}
+
+.icon-naver {
+  border: 1px solid #00bf18;
+  padding-left: 11px;
+}
+
+.icon-kakaotalk {
+  border: 1px solid #f2c94c;
+  padding-left: 12px;
+}
+
+[class^="icon"]::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(./images/icon-sprites.png);
+}
+
+.icon-google::before {
+  background-position: -13px -12px;
+}
+
+.icon-facebook::before {
+  background-position: -63px -13px;
+}
+
+.icon-naver::before {
+  background-position: -10px -60px;
+}
+
+.icon-kakaotalk::before {
+  background-position: -58px -60px;
+}
+
+/* 로그인 모달 닫기 */
+.modal-close {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 23px;
+  top: 20px;
+}

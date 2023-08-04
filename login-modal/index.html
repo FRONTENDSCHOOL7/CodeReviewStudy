@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="section">
+        <header class="header">
+            <h1>로그인 또는 회원가입</h1>
+            <button type="button"><span class="a11y-hidden">닫기 버튼</span></button>
+        </header>
+        <main class="main">
+            <article class="normal-login">
+                <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+
+                <form class="form">
+                    <label class="a11y-hidden" for="input-id">아이디</label>
+                    <input class="input" id="input-id" type="text" placeholder="아이디">
+                    <p class="id-alert">아이디를 입력해주세요</p>
+                    <label class="pw a11y-hidden" for="input-pw">비밀번호</label>
+                    <input class="input pw" id="input-pw" type="text" placeholder="비밀번호">
+                    <p class="pw-alert">아이디 혹은 비밀번호과 일치하지 않습니다.</p>
+                    <input class="input-hold hide" id="checkbox-login" type="checkbox">
+                    <label class="label-hold" for="checkbox-login">로그인 상태 유지</label>
+                    <button class="btn member" type="submit">로그인</button>
+                </form>
+                <div>
+                    <a href="./">회원가입</a>
+                    <a href="./">아이디/비밀번호 찾기</a>
+                </div>
+            </article>
+            <article class="sns-login">
+                <p>또는</p>
+
+                <ul class="sns-group">
+                    <li>
+                        <a class="btn google" href="./">구글 계정으로 로그인</a>
+                    </li>
+                    <li>
+                        <a class="btn facebook" href="./">페이스북 계정으로 로그인</a>
+                    </li>
+                    <li>
+                        <a class="btn naver" href="./">네이버 계정으로 로그인</a>
+                    </li>
+                    <li>
+                        <a class="btn kakao" href="./">카카오톡 계정으로 로그인</a>
+                    </li>
+                </ul>
+            </article>
+        </main>
+    </section>
+    <ul>
+</body>
+
+</html>

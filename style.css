@@ -1,0 +1,255 @@
+h1,
+h2,
+p,
+strong {
+  margin: inherit;
+  font: inherit;
+}
+button,
+hr {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  border: none;
+}
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.wrapper {
+  width: 520px;
+  margin: auto auto;
+  border-radius: 10px;
+  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  background: #fff;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: auto;
+  /* background-image: url(./images/close.png);
+  background-repeat: no-repeat;
+  background-position: 480px;
+  background-size: 16px; */
+  padding-top: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #c4c4c4;
+  font-weight: 500;
+}
+.header img {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.welcome {
+  width: fit-content;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.input-idpw {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 472px;
+  height: 50px;
+  margin-left: 24px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.id {
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-weight: 400;
+  border: 1px solid #c4c4c4;
+}
+.input:focus.id {
+  outline: 1px solid red;
+}
+.input:focus.pw {
+  outline: 1px solid red;
+}
+.pw {
+  padding-left: 16px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+.strong {
+  height: 10px;
+  /* color: #f4492e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 28px; */
+  opacity: 0;
+}
+.id:focus ~ .strong.one {
+  color: #f4492e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 28px;
+  padding: 6px 0 20px;
+  opacity: 1;
+}
+.pw:focus ~ .strong.two {
+  color: #f4492e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 28px;
+  padding: 10px 0 12px;
+  opacity: 1;
+}
+.txt-hide {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.labl-hold {
+  display: inline block;
+  position: relative;
+  color: #767676;
+  /* cursor: pointer; */
+}
+
+.labl-hold::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-left: 28px;
+  background: url(./images/check-box-off.png) 0 0/22px no-repeat;
+  cursor: pointer;
+  vertical-align: -5px;
+}
+
+.labl-hold::after {
+  position: absolute;
+  margin-left: 28px;
+  left: 20px;
+  content: "";
+  width: 22px;
+  height: 22px;
+  opacity: 0;
+  background: url(./images/check-box-on.png) 0 0/22px no-repeat;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.inp-Hold:checked + .labl-hold::after {
+  top: 0.3px;
+  left: 0.2px;
+  opacity: 1;
+}
+.inp-Hold:checked + .labl-hold::before {
+  opacity: 0;
+}
+
+.btn-login {
+  width: 472px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-top: 21px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Atag {
+  display: flex;
+  color: #767676;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px;
+  gap: 10px;
+}
+.Atag a {
+  cursor: pointer;
+}
+.or {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.or .rectangle {
+  width: 210px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+/* footer */
+.another-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #767676;
+  width: 472px;
+  text-align: center;
+  margin: 20px 0 20px 25px;
+  font-weight: 500;
+}
+.icon-google {
+  cursor: pointer;
+  padding: 15px;
+  background-repeat: no-repeat;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-image: url(./images/Google__G__Logo\ 1.png);
+  background-position: 12px;
+}
+.icon-facebook {
+  cursor: pointer;
+  padding: 15px;
+  background-repeat: no-repeat;
+  border: 1px solid #2d9cdb;
+  border-radius: 5px;
+  background-image: url(./images/facebook.png);
+  background-position: 12px;
+}
+.icon-naver {
+  cursor: pointer;
+  padding: 15px;
+  background-repeat: no-repeat;
+  border: 1px solid #00bf18;
+  border-radius: 5px;
+  background-position: 12px;
+  background-image: url(./images/naver-logo.png);
+}
+.icon-kakao {
+  cursor: pointer;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border: 1px solid #f2c94c;
+  border-radius: 5px;
+  background-image: url(./images/message-circle.png);
+}

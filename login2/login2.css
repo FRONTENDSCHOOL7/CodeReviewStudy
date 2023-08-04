@@ -1,0 +1,252 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+input::placeholder {
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--767676, #767676);
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+body {
+  padding-top: 5%;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 520px;
+  border-radius: 10px;
+  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #c4c4c4;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main1::after {
+  content: "";
+  display: block;
+  width: 472px;
+  height: 1px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.main1 h1 {
+  margin-top: 26px;
+  width: 472px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.main1 input {
+  display: block;
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--767676, #767676);
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+
+.warning {
+  padding-left: 4px;
+  width: 472px;
+  color: #f4492e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main1 input:nth-of-type(1) {
+  border: 2px solid red;
+}
+
+.main1 input:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.check {
+  width: 472px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 21px;
+}
+
+#chk {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.main1 label {
+  display: flex;
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main1 label div {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background: url(./img/check-box2.png) no-repeat;
+  margin-right: 5px;
+}
+
+#chk:checked + label .box::after {
+  display: block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: url(./img/check-box.png) no-repeat;
+  margin-right: 5px;
+}
+
+.main1 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 472px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #2f80ed;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.membership {
+  position: relative;
+  width: 472px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 136px;
+  margin-bottom: 38px;
+}
+
+.membership::before {
+  font-size: 14px;
+  color: var(--767676, #767676);
+  position: absolute;
+  content: "|";
+  left: 197px;
+}
+
+.membership a {
+  display: block;
+  color: var(--767676, #767676);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main2::before {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  content: "또는";
+  color: var(--767676, #767676);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: -11px;
+  left: 231px;
+  display: flex;
+  justify-content: center;
+}
+
+.main2 a {
+  position: relative;
+  display: block;
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--767676, #767676);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 a:nth-of-type(1) {
+  margin-top: 29px;
+}
+
+.main2 a:nth-of-type(2) {
+  border: 1px solid #2d9cdb;
+}
+
+.main2 a:nth-of-type(3) {
+  border: 1px solid #00bf18;
+}
+.main2 a:nth-of-type(4) {
+  border: 1px solid #f2c94c;
+  margin-bottom: 25px;
+}
+.main2 a p {
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-weight: 500;
+}
+.main2 a img {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 11px;
+  left: 12px;
+}

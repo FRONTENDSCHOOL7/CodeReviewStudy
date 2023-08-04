@@ -301,11 +301,11 @@ main {
 }
 
 /* 로그인 모달 닫기 */
-.modal-close {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
+.link-go-to-weniv {
   position: absolute;
   right: 23px;
   top: 20px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }

@@ -101,19 +101,21 @@ button:enabled {
     height: 23px;
     transform: translateY(50%);
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .bar {
     width: 22.4px;
+    background-color: #767676;
     border: 1px solid #767676;
 }
 
 .toggle .bar:nth-of-type(1) {
-    transform: rotate(45deg);
+    transform: rotate(45deg) translate(1px, -0.5px);
 }
 
 .toggle .bar:nth-of-type(2) {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateX(1px);
 }
 
 /* ------ login-main ------ */
@@ -135,7 +137,7 @@ button:enabled {
     padding: 15px 16px;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
-    outline: 1px solid #C4C4C4;
+    /* outline: 1px solid #C4C4C4; */
 }
 
 .user-box > input:placeholder {
@@ -267,14 +269,17 @@ input[id="input-hold"]:checked + label {
 .facebook {
     background-image: url(../images/icon-facebook.svg);
     border-color: #2d9cdb;
+    background-position-x: 20px;
 }
 
 .naver {
     background-image: url(../images/icon-naver.svg);
     border-color: #00bf18;
+    background-position: 15px, 10px;
 }
 
 .kakaotalk {
     background-image: url(../images/icon-kakao.svg);
     border-color: #f2c94c;
+    background-position: 15px, 12px;
 }

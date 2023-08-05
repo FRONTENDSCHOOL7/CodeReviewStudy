@@ -93,6 +93,7 @@ button:enabled {
     width: fit-content;
     margin: 20px auto 18px auto;
     transform: translateX(23px);
+    word-spacing: 2px;
 }
 
 /* ------ toggle ------ */

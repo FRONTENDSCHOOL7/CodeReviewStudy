@@ -1,0 +1,290 @@
+/* main page centering */
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    max-width: 520px;
+    max-height: 712px;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+    background: #FFF;
+
+    position: relative;
+    }
+
+/* header */
+header {
+    height: 58px;
+    border-bottom: 1px solid #C4C4C4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.header-text {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-container img {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    left: 480px;
+    top: 22px;
+    right: 24px;
+}
+
+.main-container {
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    position: relative;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+/* 위니브 소개 텍스트 */
+.input-area h2 {
+    width: 369px;
+    height: 24px;
+    margin: 26px 127px 24px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* 아이디&비밀번호 입력창 */
+.input-area form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-id {
+    width: 472px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    position: relative;
+}
+
+#user-pw {
+    width: 472px;
+    height: 50px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    position: relative;
+}
+
+::placeholder {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 16px;
+
+    color:#767676;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+/* 체크박스 */
+.checkbox-area {
+    margin: 17px 351px 21px 28px;
+}
+
+.login-checkbox {
+    /* checkbox styling reset */
+    /* visibility: hidden; */
+}
+
+.checkbox-text {
+    color: #767676;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* 체크박스 커스텀 스타일링 미구현 */
+.checkbox-area::before {
+    background-image: url("../images/check-box-default.svg") no-repeat 22px 22px;
+    content:'';
+}
+
+/* 로그인 버튼 */
+.login-button {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    background: #2F80ED;
+}
+
+.login-button span {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* 회원가입 | 아이디\비번찾기 */
+.signup-findInfo {
+    margin-top: 20px;
+}
+
+.signup-findInfo span {
+    color: #767676;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* 가상요소 사용시 | 전후 공백에 마우스를 hover할시 커서가 pointer로 바뀌어 span으로 추가 */
+/* .findInfo::before {
+    content: '|';
+    margin-right: 12px;
+    margin-left: 12px;
+
+    color:#767676;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: default;
+} */
+
+/* ----또는---- divider */
+.or-divider {
+    color: #767676;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+}
+
+.or-divider::before {
+    content:'';
+    width: 210px;
+    height: 1px;
+    margin-right: 13px;
+    background: #c4c4c4;
+}
+
+.or-divider::after {
+    content:'';
+    width: 210px;
+    height: 1px;
+    margin-left: 13px;
+    background: #c4c4c4;
+}
+
+/* 빠른 로그인 */
+.quick-login-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    gap: 10px; 
+}
+
+/* lists styling */
+.quick-login-buttons img {
+    width: 28px;
+    height: 28px;
+    
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.lists-border {
+    width: 472px;
+    height: 50px;   
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.quick-login-buttons span{
+    color: #767676;
+    text-align: center;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.google {
+    border: 1px solid #767676;
+}
+
+.facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.naver {
+    border: 1px solid #00BF18;
+}
+
+.kakaotalk {
+    border: 1px solid #F2C94C;
+}

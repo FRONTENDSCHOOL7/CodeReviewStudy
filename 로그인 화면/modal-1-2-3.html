@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>로그인 또는 회원가입</title>
+
+    <link rel="stylesheet" href="./css/modal.css">
+
+</head>
+
+<body>
+    
+    <div class="wrap">
+
+        <header class="header">
+            <h1 class="title">로그인 또는 회원가입</h1>
+            <div class="toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        <div class="login-main">
+            <h2 class="welcome">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+    
+            <form class="login-box">
+                <div class="user-box">
+                    <input type="text" placeholder="아이디" required>
+                    <label class="a11y-hidden">아이디</label>
+                </div>
+    
+                <div class="user-box">
+                    <input type="password" placeholder="비밀번호" required>
+                    <label class="a11y-hidden">비밀번호</label>
+                </div>
+    
+                <div class="login-state">
+                    <input type="checkbox" id="input-hold" class="input-hold">
+                    <label for="input-hold" class="label-hold"></label>
+                    <div class="state-text">로그인 상태 유지</div>
+                </div>
+    
+                <button type="submit" class="login-btn">로그인</button>
+            </form>
+    
+            <div class="login-link">
+                <a href="#">회원가입</a>
+                <span>|</span>
+                <a href="#">아이디/비밀번호찾기</a>
+            </div>
+    
+            <div class="dividing-area">
+                또는
+            </div>
+    
+            <div class="login-social">
+                <h2 class="a11y-hidden">소셜 네트워크 로그인</h2>
+    
+                <button class="social-signin google">
+                    <p>구글 계정으로 로그인</p>
+                </button>
+    
+                <button class="social-signin facebook">
+                    <p>페이스북 계정으로 로그인</p>
+                </button>
+    
+                <button class="social-signin naver">
+                    <p>네이버 계정으로 로그인</p>
+                </button>
+    
+                <button class="social-signin kakaotalk">
+                    <p>카카오톡 계정으로 로그인</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------ reset ------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+/* ------ css ------ */
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* ------ wrap ------ */
+.wrap {
+    margin: 100px auto;    
+    width: 520px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+}
+
+/* ------ wrap login ------ */
+.wrap-login {
+    width: 500px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    margin: 280px auto;
+}
+
+.wrap-login .logo-weniv {
+    width: fit-content;
+    margin: 30px auto 28px auto;
+}
+
+.wrap-login .login-text {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.wrap-login .login-btn {
+    width: calc(100% - (30px * 2));
+    margin: 32px 30px 30px;
+}
+
+
+
+/* ------ header ------ */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.title {
+    font-size: 16px;
+    width: fit-content;
+    margin: 20px auto 18px auto;
+    transform: translateX(23px);
+    word-spacing: 2px;
+}
+
+/* ------ toggle ------ */
+.toggle {
+    width: 23px;
+    height: 23px;
+    transform: translateY(50%);
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 22.4px;
+    background-color: #767676;
+    border: 1px solid #767676;
+}
+
+.toggle .bar:nth-of-type(1) {
+    transform: rotate(45deg) translate(1px, -0.5px);
+}
+
+.toggle .bar:nth-of-type(2) {
+    transform: rotate(-45deg) translateX(1px);
+}
+
+/* ------ login-main ------ */
+.login-main {
+    margin: 26px 24px 25px 24px;
+}
+
+.welcome {
+    font-size: 20px;
+}
+
+/* ------ login-box ------ */
+.login-box {
+    margin: 24px 0 20px 0;
+}
+
+.user-box > input {
+    width: calc(100% - 32px);
+    padding: 15px 16px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    /* outline: 1px solid #C4C4C4; */
+}
+
+.user-box > input:placeholder {
+    color: #767676;
+    font-size: 16px;
+}
+
+.user-box:first-child {
+    margin-bottom: 10px;
+}
+
+.user-box:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.login-state {
+    display: flex;
+}
+
+input[id="input-hold"] {
+    display: none;
+}
+
+input[id="input-hold"] + label {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #767676;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[id="input-hold"]:checked + label {
+    background-color: #2f80ed;
+    border-color: #2f80ed;
+    background-image: url(../images/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-state .state-text {
+    display: inline-block;
+    font-size: 16px;
+    color: #767676;
+    margin-left: 8px;
+}
+
+.login-btn {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #2f80ed;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    margin-top: 20px;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #767676;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.login-link span{
+    margin: 0 12px;
+}
+
+/* ------ id alert ------ */
+.user-box .user-id {
+    outline: #f4492e;
+    border: 2px solid #f4492e;
+}
+
+.user-box .id-alert {
+    color: #f4492e;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-bottom: -4px;
+}
+
+/* ------ dividing area ------ */
+.dividing-area {
+    font-size: 14px;
+    color: #767676;
+    width: fit-content;
+    margin: 30px auto 20px auto;
+}
+
+.dividing-area::before, .dividing-area::after {
+    content: '';
+    display: inline-block;
+    width: 205px;
+    border-bottom: 1px solid #767676;
+    vertical-align: middle;
+}
+
+.dividing-area::before {
+    transform: translateX(-13px);
+}
+
+.dividing-area::after {
+    transform: translateX(13px);
+}
+
+/* ------ login-social ------ */
+.social-signin {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.google {
+    background-image: url(../images/icon-google.svg);
+    border-color: #767676;
+}
+
+.facebook {
+    background-image: url(../images/icon-facebook.svg);
+    border-color: #2d9cdb;
+    background-position-x: 20px;
+}
+
+.naver {
+    background-image: url(../images/icon-naver.svg);
+    border-color: #00bf18;
+    background-position: 15px, 10px;
+}
+
+.kakaotalk {
+    background-image: url(../images/icon-kakao.svg);
+    border-color: #f2c94c;
+    background-position: 15px, 12px;
+}

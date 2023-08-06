@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Hi+Melody&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="login.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="title">
+            <h1 class="title2">로그인 또는 회원가입</h1>
+        </header>
+        <main>
+            <h2 class="weniv">위니브에서 여러분의 궁금증을 해결하세요!:)</h2>
+            <form class="form1">
+                <div class="inputId">
+                    <input type="text" class="input id" id="inputId" placeholder="아이디">
+                </div>
+
+                <div class="find findId"></div>
+
+                <div class="inputPwd">
+                    <input type="password" class="input pwd" id="inputPwd" placeholder="비밀번호">
+                </div>
+
+                <div class="find findPw"></div>
+
+                <input type="checkbox" id="inpHold" class="inphold txt-hide">
+                <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+
+
+                <button type="button" class="btn btn-login">로그인</button>
+            </form>
+            <div class="join">
+                <a href="#">회원가입</a>
+                <span>|</span>
+                <a href="#">아이디/비밀번호 찾기</a>
+            </div>
+
+            <div class="or">
+                <hr class="hr-left" />
+                <span>또는</span>
+                <hr class="hr-right" />
+            </div>
+
+
+
+            <ul class="login-list">
+                <li>
+                    <a href="#" type="button" class="a a-google">구글 계정으로 로그인</a>
+                </li>
+                <li>
+                    <a href="#" type="button" class="a a-facebook">
+                        페이스북 계정으로 로그인</a>
+                </li>
+                <li>
+                    <a href="#" type="button" class="a a-naver">네이버 계정으로 로그인</a>
+
+                </li>
+                <li>
+                    <a href="#" type="button" class="a a-kakao">
+                        카카오 계정으로 로그인</a>
+                </li>
+            </ul>
+    </div>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $('.btn-login').on('click', function () {
+                if ($("#inputId").val() == "") {
+                    $('.findPw').empty();
+                    $('#inputPwd').css("border", "1px solid #c4c4c4");
+
+                    $('.findId').text('아이디를 입력해주세요');
+                    $('#inputId').css("border", "2px solid #F4492E");
+
+                } else if ($("#inputPwd").val() == "") {
+                    $('.findId').empty();
+                    $("#inputId").css("border", "1px solid #c4c4c4");
+
+                    $('.findPw').text('비밀번호를 입력해주세요.');
+                    $('#inputPwd').css("border", "2px solid #F4492E");
+
+                } else {
+                    $('.findPw').text('아이디 혹은 비밀번호가 일치하지 않습니다.');
+                    $('#inputPwd').css("border", "1px solid #c4c4c4");
+                    $("#inputId").css("border", "1px solid #c4c4c4");
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>

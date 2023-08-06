@@ -1,0 +1,357 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+strong,
+ul,
+li,
+form,
+label,
+header,
+hr,
+svg {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+}
+
+input,
+div,
+a,
+svg {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* 전체 div */
+.container {
+    width: 520px;
+    /* height: 736px; */
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+main {
+    padding: 0 24px;
+    /* 박스안에 좌우 padding */
+}
+
+/* 제목 css */
+.title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #c4c4c4;
+    width: 100%;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-image: url(./img/close.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    transform: translate(-24px, -22px);
+    cursor: pointer;
+}
+
+
+.title2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 25px;
+}
+
+/* // 제목 css */
+
+/* 위니브 css */
+.weniv {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 26px;
+}
+
+/* //위니브 css */
+
+/* 아이디 비밀번호 input css */
+.input {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    color: #767676;
+    padding-left: 16px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.inputId {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.inputPwd {
+    margin-bottom: 17px;
+}
+
+/* //아이디 비밀번호 input css */
+
+/* 체크박스 */
+.labl-hold {
+    color: #767676;
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.txt-hide {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    position: absolute;
+}
+
+.labl-hold {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.labl-hold::before {
+    display: inline-block;
+    content: '';
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    background-image: url(img/check-box-passive.svg);
+    background-repeat: no-repeat;
+    /* vertical-align: -6px;   vertical-align속성에서 운영체제별로 다르게 보이는 문제가 발생 */
+}
+
+.labl-hold::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22px;
+    height: 22px;
+    background-image: url(img/check-box.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.inphold:checked+.labl-hold::after {
+    left: 0;
+    opacity: 1;
+}
+
+/* //체크박스 css */
+
+/* 회원가입 | 찾기 css */
+.join {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 21px;
+    gap: 12px;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+/* //회원가입 | 찾기 css */
+
+/* 또는 css */
+[class^="hr"] {
+    width: 210px;
+    height: 1px;
+    background: #c4c4c4;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.or span {
+    color: #c4c4c4;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 13px;
+}
+
+/* //또는 css */
+
+/* 버튼 css */
+.btn {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.btn-login {
+    background-color: #2f80ed;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 21px;
+}
+
+.a {
+    width: 472px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* line-height: 50px; */
+    background: #FFF;
+    border-radius: 5px;
+    color: #767676;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.login-list li {
+    margin-bottom: 10px;
+}
+
+.a-google {
+    border: 1px solid #767676;
+    vertical-align: middle;
+    position: relative;
+}
+
+.a-google::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(img/icon_google.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
+.a-facebook {
+    border: 1px solid #2D9CDB;
+    position: relative;
+}
+
+.a-facebook::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(img/icon_facebook.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(65%, 50%);
+}
+
+.a-naver {
+    border: 1px solid #00BF18;
+    position: relative;
+}
+
+.a-naver::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(img/icon_naver.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
+.a-kakao {
+    border: 1px solid #F2C94C;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.a-kakao::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(img/icon_kakao.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
+/* 오류글씨 css */
+.find {
+    color: #F4492E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.findId {
+    margin-bottom: 10px;
+}
+
+.findPw {
+    margin-bottom: 12px;
+}

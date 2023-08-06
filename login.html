@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Hi+Melody&family=Noto+Sans+KR&display=swap"
         rel="stylesheet">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
@@ -38,7 +39,7 @@
 
                 <input type="checkbox" id="inpHold" class="inphold txt-hide">
                 <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
-                    
+
 
                 <button type="button" class="btn btn-login">로그인</button>
             </form>
@@ -73,33 +74,33 @@
                         카카오 계정으로 로그인</a>
                 </li>
             </ul>
-        </div>
+    </div>
     </main>
     <script>
-        $(document).ready(function(){
-            $('.btn-login').on('click',function(){
-            if($("#inputId").val() == ""){
-                $('.findPw').empty();
-                $('#inputPwd').css("border", "1px solid #c4c4c4");
+        $(document).ready(function () {
+            $('.btn-login').on('click', function () {
+                if ($("#inputId").val() == "") {
+                    $('.findPw').empty();
+                    $('#inputPwd').css("border", "1px solid #c4c4c4");
 
-                $('.findId').text('아이디를 입력해주세요');
-                $('#inputId').css("border", "2px solid #F4492E");
+                    $('.findId').text('아이디를 입력해주세요');
+                    $('#inputId').css("border", "2px solid #F4492E");
 
-            }else if($("#inputPwd").val()==""){
-                $('.findId').empty();
-                $("#inputId").css("border", "1px solid #c4c4c4");
+                } else if ($("#inputPwd").val() == "") {
+                    $('.findId').empty();
+                    $("#inputId").css("border", "1px solid #c4c4c4");
 
-                $('.findPw').text('비밀번호를 입력해주세요.');
-                $('#inputPwd').css("border", "2px solid #F4492E");
+                    $('.findPw').text('비밀번호를 입력해주세요.');
+                    $('#inputPwd').css("border", "2px solid #F4492E");
 
-            }else{
-                $('.findPw').text('아이디 혹은 비밀번호가 일치하지 않습니다.');
-                $('#inputPwd').css("border", "1px solid #c4c4c4");
-                $("#inputId").css("border", "1px solid #c4c4c4");
-            } 
-            
+                } else {
+                    $('.findPw').text('아이디 혹은 비밀번호가 일치하지 않습니다.');
+                    $('#inputPwd').css("border", "1px solid #c4c4c4");
+                    $("#inputId").css("border", "1px solid #c4c4c4");
+                }
+
+            })
         })
-    })
     </script>
 </body>
 

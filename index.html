@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="title">
+        <h1>로그인 또는 회원가입</h1>
+        <button type="button" class="exit"></button>
+        <div></div>
+      </section>
+      <section class="login">
+        <h2>위니브에서 여러분의 궁금증을 해결하세요! : &#41;</h2>
+        <input type="text" name="id" id="id" placeholder="아이디" />
+        <p class="warning">아이디를 입력해 주세요</p>
+        <input type="password" name="pw" id="pw" placeholder="비밀번호" />
+        <p class="warning">아이디 혹은 비밀번호과 일치하지 않습니다.</p>
+        <div class="keep-login">
+          <input type="checkbox" id="inphold" class="txt-hide" />
+          <label for="inphold" class="labl-hold">로그인 상태 유지</label>
+        </div>
+        <button class="login-button">로그인</button>
+        <div class="signin-container">
+          <a href="#" class="signin">회원가입</a
+          ><a href="#">아이디/비밀번호 찾기</a>
+        </div>
+        <div class="or">
+          <div></div>
+          <p>또는</p>
+        </div>
+      </section>
+      <section class="external-login">
+        <a href="https://www.google.co.kr/?hl=ko">
+          <img src="./images/google.svg" alt="google-logo" />
+          <p>구글 계정으로 로그인</p>
+        </a>
+        <a href="https://ko-kr.facebook.com/" class="facebook">
+          <img src="./images/facebook.svg" alt="facebook-logo" />
+          <p>페이스북 계정으로 로그인</p>
+        </a>
+        <a href="https://www.naver.com/" class="naver">
+          <img src="./images/naver.svg" alt="naver-logo" />
+          <p>네이버 계정으로 로그인</p>
+        </a>
+        <a
+          href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko"
+          class="kakao"
+        >
+          <img src="./images/kakao.svg" alt="kakao-logo" />
+          <p>카카오톡 계정으로 로그인</p>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

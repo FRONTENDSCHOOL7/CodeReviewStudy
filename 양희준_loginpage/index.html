@@ -14,24 +14,48 @@
         <a href="#"><img src="./images/close.svg" alt="닫기" /></a>
       </header>
       <main>
-        <section class="section1">
-          <p>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</p>
-          <label for="id-input"></label>
-          <input type="text" id="id-input" placeholder="아이디" />
-          <p class="id_err">아이디를 입력해 주세요.</p>
-          <label for="pw-input"></label>
-          <input type="password" id="pw-input" placeholder="비밀번호" />
-          <p class="pw_err">아이디 혹은 비밀번호와 일치하지 않습니다.</p>
-          <div class="check">
-            <img src="./images/check-box.svg" />
-            <p>로그인 상태 유지</p>
-          </div>
-          <button type="button">로그인</button>
-          <div class="group">
-            <p class="join">회원가입</p>
-            <p>아이디/비밀번호 찾기</p>
-          </div>
-        </section>
+        <form action="url" method="post">
+          <section class="section1">
+            <p>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</p>
+            <label for="id-input"></label>
+            <input type="text" id="id-input" placeholder="아이디" />
+            <p class="id_err">아이디를 입력해 주세요.</p>
+            <label for="pw-input"></label>
+            <input type="password" id="pw-input" placeholder="비밀번호" />
+            <p class="pw_err">아이디 혹은 비밀번호와 일치하지 않습니다.</p>
+            <div class="check">
+              <input
+                class="ck a11y-hidden"
+                type="checkbox"
+                name="check"
+                id="checked"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <circle cx="11" cy="11" r="10.5" stroke="#767676" />
+                <path
+                  d="M15.5 8.5L10.5 14L7 10.5"
+                  stroke="#767676"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <label for="checked" class="check_msg">로그인 상태 유지</label>
+            </div>
+            <button type="button">로그인</button>
+            <div class="group">
+              <ul>
+                <li class="join"><a>회원가입</a></li>
+                <li><a>아이디/비밀번호 찾기</a></li>
+              </ul>
+            </div>
+          </section>
+        </form>
 
         <div class="or">
           <p></p>

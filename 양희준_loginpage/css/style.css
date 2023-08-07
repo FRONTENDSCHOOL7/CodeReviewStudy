@@ -38,11 +38,12 @@ button:enabled {
 
 /* CSS 적용 */
 body {
-  height: 100vh;
-  width: 100vw;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 .wrapper {
@@ -136,14 +137,9 @@ header {
 .check {
   display: flex;
   padding-left: 28px;
-}
-.check img {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
   padding-bottom: 21px;
 }
-.check p {
+.check_msg {
   display: inline-block;
   color: var(--767676, #767676);
   font-size: 16px;
@@ -151,6 +147,13 @@ header {
   font-weight: 400;
   line-height: normal;
   margin-left: 8px;
+}
+.ck:checked + svg circle {
+  fill: #2f80ed;
+  stroke: white;
+}
+.ck:checked + svg path {
+  stroke: white;
 }
 .section1 button {
   margin: 0 auto;
@@ -166,7 +169,13 @@ header {
   justify-content: center;
   padding-top: 20px;
 }
-.group p {
+.group ul {
+  display: flex;
+}
+.group a {
+  cursor: pointer;
+}
+.group li {
   justify-content: center;
   display: inline-block;
   font-size: 14px;
@@ -230,30 +239,40 @@ header {
 }
 
 .section2 .google {
-  background-image: url(/images/google.svg);
+  background-image: url("../images/google.svg");
   background-repeat: no-repeat;
   background-position: 12px;
   border-color: 767676;
   margin-bottom: 10px;
 }
 .section2 .facebook {
-  background-image: url(/images/facebook.svg);
+  background-image: url("../images/facebook.svg");
   background-repeat: no-repeat;
   background-position: 12px;
   border-color: #2d9cdb;
   margin-bottom: 10px;
 }
 .section2 .naver {
-  background-image: url(/images/naver.svg);
+  background-image: url("../images/naver.svg");
   background-repeat: no-repeat;
   background-position: 12px;
   border-color: #00bf18;
   margin-bottom: 10px;
 }
 .section2 .kakao {
-  background-image: url(/images/kakao.svg);
+  background-image: url("../images/kakao.svg");
   background-repeat: no-repeat;
   background-position: 12px;
   border-color: #f2c94c;
   margin-bottom: 25px;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }

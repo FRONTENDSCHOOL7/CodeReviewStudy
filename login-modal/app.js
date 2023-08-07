@@ -35,6 +35,7 @@ const loginBtnHandler = (event) => {
       "아이디를 입력해주세요.",
       userPwd
     );
+    secondErrorMsg ? userPwd.classList.remove("focus") : null;
     secondErrorMsg ? removeErrorMsg(secondErrorMsg) : null;
     return;
   } else if (userId.value.trim() && !userPwd.value.trim()) {

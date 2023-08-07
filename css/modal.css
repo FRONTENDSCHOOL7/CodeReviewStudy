@@ -1,0 +1,226 @@
+.modal {
+    /* position: fixed; */
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal a {
+    color: var(--gray);
+}
+
+.modal-content {
+    /* position: fixed; */
+    width: 32.5rem;
+    height: fit-content;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--light-gray);
+}
+
+.header {
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: medium;
+    line-height: 3.625rem;
+    text-align: center;
+}
+
+.closeBtn {
+    position: absolute;
+    background: url(../img/close.svg) no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    right: 0;
+    margin: 20px;
+
+}
+
+.modal-content section {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.login-section p {
+    font-weight: medium;
+    font-size: 1.25rem;
+    padding-top: 2px;
+    padding-bottom: 24px;
+}
+
+.login-section .login-form{
+    width: 100%;  
+}
+
+.login-section .login-form * {
+    width: 100%;
+}
+
+.login-section input {
+    font-size: 1rem;
+    padding: 0 1em;
+}
+
+.login-section input[type="password"] {
+    margin-top: 10px;
+}
+
+.login-section input::placeholder {
+    color: var(--gray);
+}
+
+.login-section input:focus::placeholder{
+    color: transparent;
+}
+
+.login-form >input:focus{
+    border: 2px solid var(--touch-blue);
+}
+
+.login-form .message {
+    color: red;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 6px;
+}
+
+
+/*로그인유지 체크박스 커스텀*/
+.check-keep label {
+    color: var(--gray);
+    font-weight: medium;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+.check-keep label::before{
+    content: "";
+    display: block;
+    width: 1.375rem;
+    height: 1.375rem;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    background: url(../img/check.svg) no-repeat 50% 50%;
+}
+
+.check-keep input:checked+label::before {
+    background: url(../img/checked.svg) no-repeat 50% 50%;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.login-section .loginBtn{
+    margin: 20px 0;
+    font-size: 18px;
+    height: 50px;
+}
+
+.box {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.join-find {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.join-find li+li{
+    position: relative;
+    padding-left: 25px;
+}
+
+li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 12px;
+    width: 1px;
+    height: 14px;
+    background-color: var(--gray);
+}
+
+
+.or {
+    padding: 14px 24px 5px 24px;
+    position: relative;
+    height: fit-content;
+}
+
+.or hr {
+    background:var(--light-gray);
+    height:1px;
+    border:0;
+}
+
+.or span{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    padding: 0 13px;
+    color: var(--gray);
+    font-size: 0.8rem;
+
+}
+
+/*social-login--------------------*/
+.login-social {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.socialBtn {
+    display: flex;
+}
+
+.socialBtn img {
+    margin-left: 12px;
+}
+
+.socialBtn span {
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.google {
+    border-color: var(--gray);
+}
+
+.facebook {
+    border-color: var(--sky);
+}
+
+.naver {
+    border-color: var(--green);
+}
+
+.kakao {
+    border-color: var(--yellow);
+}
+
+/*modal open-close*/
+.modal.active {
+    display: block;
+}
+

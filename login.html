@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/reset-common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+    <!--기본 로그인창-->
+    <section class="login center">
+            <img src="./img/weniv-logo.svg" alt="weniv-logo">
+            <h1 class="a11y-hidden">weniv</h1>
+        <p>위니브를 더 즐겁고 편리하게 이용하세요.</p>
+        <button class="loginBtn openBtn">로그인</button>
+    </section>
+    <!--모달 로그인창-->
+    <div id="modal" class="modal center">
+        <!--추후 배경 클릭시 모달창 닫히는 기능 추가-->
+        <article class="modal-content center">
+            <header class="header">
+                <h2 class="title">로그인 또는 회원가입</h2>
+            </header>
+            <section class="login-section">
+                <p>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</p>
+                <form class="login-form" id="login-form">
+                    <label for="ID" class="a11y-hidden">아이디</label>
+                    <input type="text" id="ID" placeholder="아이디" class="text-id box"/>
+                    <label for="PW" class="a11y-hidden">비밀번호</label>
+                    <input type="password" id="PW" placeholder="비밀번호" class="text-pw box"/>
+                    <div class="check-keep">
+                        <input type="checkbox" name="" id="keep" class="a11y-hidden" />
+                        <label for="keep">로그인 상태 유지</label>
+                    </div>
+                    <button type="submit" class="loginBtn" id="loginBtn">로그인</button>
+                </form>
+                <ul class="join-find">
+                    <li>
+                        <a href="#" class="join">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#" class="find">아이디/비밀번호 찾기</a>
+                    </li>    
+                </ul>
+            </section>
+            <div class="or">
+                <hr />
+                <span>또는</span>
+            </div>
+            <section class="login-social">
+                <a class="socialBtn google box" href="#">
+                    <img src="img/google-logo.svg">
+                    <span>구글 계정으로 로그인</span>
+                </a>
+                <a class="socialBtn facebook box" href="#">
+                    <img src="img/facebook-logo.svg">
+                    <span>페이스북 계정으로 로그인</span>
+                </a>
+                <a class="socialBtn naver box" href="#">
+                    <img src="img/naver-logo.svg">
+                    <span>네이버 계정으로 로그인</span>
+                </a>
+                <a class="socialBtn kakao box" href="#">
+                    <img src="img/kakao-logo.svg">
+                    <span>카카오톡 계정으로 로그인</span>
+                </a>
+            </section>
+            <button class="closeBtn"></button>
+        </article>
+    </div>
+    
+</body>
+<script src="login.js"></script>
+</html>

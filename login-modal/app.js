@@ -32,32 +32,30 @@ const loginBtnHandler = (event) => {
       userPwd
     );
     return;
-  } else if (userId.value.trim()) {
-    // 아이디 입력 시
+  } else if (userId.value.trim() && !userPwd.value.trim()) {
+    // 비밀번호 미입력 시
     userId.classList.remove("focus");
     removeErrorMsg(firstErrorMsg);
-
-    if (!userPwd.value.trim()) {
-      // 아이디 입력 & 비밀번호 미입력 시
-      userPwd.classList.add("focus");
-      createErrorMsg(
-        secondErrorMsg,
-        "second-error-msg",
-        "비밀번호를 입력해주세요.",
-        userPwd.nextSibling
-      );
-      return;
-    } else if (userPwd.value.trim()) {
-      // 아이디 입력 & 비밀번호 입력 시
-      userPwd.classList.remove("focus");
-      if (userId.value !== "weniv07" && userPwd.value !== "frontend07!") {
-        secondErrorMsg.innerText = "아이디 혹은 비밀번호가 일치하지 않습니다.";
-        return;
-      } else {
-        removeErrorMsg(secondErrorMsg);
-        alert("로그인 성공!");
-      }
-    }
+    userPwd.classList.add("focus");
+    createErrorMsg(
+      secondErrorMsg,
+      "second-error-msg",
+      "비밀번호를 입력해주세요.",
+      userPwd.nextSibling
+    );
+    return;
+  } else if (userId.value !== "weniv07" && userPwd.value !== "frontend07!") {
+    // 아이디와 비밀번호 불일치 시
+    userPwd.classList.remove("focus");
+    createErrorMsg(
+      secondErrorMsg,
+      "second-error-msg",
+      "아이디 혹은 비밀번호가 일치하지 않습니다.",
+      userPwd.nextSibling
+    );
+  } else {
+    removeErrorMsg(secondErrorMsg);
+    alert("로그인 성공!");
   }
 };
 

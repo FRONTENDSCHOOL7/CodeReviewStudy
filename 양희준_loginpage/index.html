@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>로그인 또는 회원가입</h1>
+        <a href="#"><img src="./images/close.svg" alt="닫기" /></a>
+      </header>
+      <main>
+        <section class="section1">
+          <p>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</p>
+          <label for="id-input"></label>
+          <input type="text" id="id-input" placeholder="아이디" />
+          <p class="id_err">아이디를 입력해 주세요.</p>
+          <label for="pw-input"></label>
+          <input type="password" id="pw-input" placeholder="비밀번호" />
+          <p class="pw_err">아이디 혹은 비밀번호와 일치하지 않습니다.</p>
+          <div class="check">
+            <img src="./images/check-box.svg" />
+            <p>로그인 상태 유지</p>
+          </div>
+          <button type="button">로그인</button>
+          <div class="group">
+            <p class="join">회원가입</p>
+            <p>아이디/비밀번호 찾기</p>
+          </div>
+        </section>
+
+        <div class="or">
+          <p></p>
+        </div>
+
+        <section class="section2">
+          <ul>
+            <li>
+              <a href="#" class="google">
+                <p>구글 계정으로 로그인</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="facebook">
+                <p>페이스북 계정으로 로그인</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="naver">
+                <p>네이버 계정으로 로그인</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="kakao">
+                <p>카카오톡 계정으로 로그인</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 520px;
+    height: 720px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: auto;
+}
+section {
+    padding-left: 24px;
+}
+section h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    font-family: 'SpoqaHanSansNeo-Regular';
+    margin: 24px 0;
+}
+header {
+    border-bottom: 1px solid #C4C4C4;
+}
+header h3{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.another {
+    width: 520px;
+    height: 712px;
+}
+input {
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 16px 15px;
+}
+
+.form {
+    padding: 24px;
+}
+
+.login {
+    color: white;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    border: #2F80ED;
+    border-radius: 5px;
+    background: #2F80ED;
+    padding: 14px;
+    display: block;
+    width: 90%;
+}
+
+
+
+/* 소셜 로그인 */
+a {
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: 500;
+    color: #767676;
+    margin: 10px 24px;
+    background-repeat: no-repeat;
+    padding: 15px auto;
+}
+.google {
+    border: 1px solid #767676;
+    background-image: url(./img/Google__G__Logo\ 1.png);
+    background-position: 10px 50%;
+}
+.facebook {
+    border: 1px solid #2D9CDB;
+    background-image: url(./img/facebook.png);
+    background-position: 10px 50%;
+}
+.naver {
+    border: 1px solid #00BF18;
+    background-image: url(./img/naver-logo.png);
+    background-position: 10px 50%;
+}
+.kakao {
+    border: 1px solid #F2C94C;
+    background-image: url(./img/message-circle.png);
+    background-position: 10px 50%;
+}
+a span {
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+}
+a img {
+    margin: 11px 10px;
+}

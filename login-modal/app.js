@@ -23,6 +23,7 @@ const loginBtnHandler = (event) => {
   };
 
   if (userId.value === "weniv07" && userPwd.value === "frontend07!") {
+    userPwd.classList.remove("focus");
     alert("로그인 성공!");
     secondErrorMsg ? removeErrorMsg(secondErrorMsg) : null;
   } else if (!userId.value.trim()) {

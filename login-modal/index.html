@@ -17,21 +17,26 @@
         <section class="weniv-login">
           <h2>위니브에서 여러분의 궁금증을 해결하세요! :&#41;</h2>
           <form action="#" class="login-form">
-            <input type="text" class="user-id" placeholder="아이디" />
+            <label class="a11y-hidden" for="id">아이디</label>
+            <input type="text" id="id" class="user-id" placeholder="아이디" />
+            <label class="a11y-hidden" for="pwd">비밀번호</label>
             <input
               type="password"
+              id="pwd"
               class="user-pwd"
               placeholder="비밀번호"
               autocomplete="off"
             />
             <input type="checkbox" id="inpHold" class="inp-hold txt-hide" />
             <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
-            <button class="login-btn">로그인</button>
+            <button type="submit" class="login-btn">로그인</button>
           </form>
-          <div class="login-service">
-            <a href="#" class="join-member">회원가입</a
-            ><a href="#">아이디/비밀번호 찾기</a>
-          </div>
+          <ul class="login-service">
+            <li>
+              <a href="#" class="join-member">회원가입</a>
+            </li>
+            <li><a href="#">아이디/비밀번호 찾기</a></li>
+          </ul>
         </section>
         <div class="or">또는</div>
         <section class="social-login">

@@ -71,6 +71,17 @@ body {
   align-items: center;
 }
 
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 .txt-hide {
   overflow: hidden;
   width: 1px;
@@ -134,7 +145,7 @@ main {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #c4c4c4;
-  padding: 13px 0 13px 16px;
+  padding: 13px 16px;
   box-sizing: border-box;
 }
 
@@ -199,15 +210,16 @@ main {
 .login-service {
   font-size: 14px;
   font-family: "SpoqaHanSansNeo-Regular";
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.login-service .join-member::after {
+.login-service li:first-child::after {
   content: "";
   display: inline-block;
   width: 1px;
   height: 14px;
-  margin-left: 13px;
+  margin-left: 11px;
   margin-right: 13px;
   vertical-align: -2px;
   background-color: #767676;

@@ -50,6 +50,12 @@ svg {
   cursor: pointer;
 }
 
+button {
+  border: 0;
+  background: none;
+  font: inherit;
+}
+
 /* CSS 시작 */
 body {
   background-color: #eee;
@@ -238,11 +244,12 @@ body {
   border-radius: 5px;
 }
 
-.login-sns-group a {
+.login-sns-group button {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  margin: 0 auto;
 }
 
 .icon-gl {

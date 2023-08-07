@@ -22,10 +22,15 @@ const loginBtnHandler = (event) => {
     }
   };
 
+  const checkFocusAndErrorMsg = (input, errorMsg) => {
+    input.classList.remove("focus");
+    removeErrorMsg(errorMsg);
+  };
+
   if (userId.value === "weniv07" && userPwd.value === "frontend07!") {
-    userPwd.classList.remove("focus");
     alert("로그인 성공!");
-    secondErrorMsg ? removeErrorMsg(secondErrorMsg) : null;
+    checkFocusAndErrorMsg(userId, firstErrorMsg);
+    checkFocusAndErrorMsg(userPwd, secondErrorMsg);
   } else if (!userId.value.trim()) {
     // 아이디 미입력 시
     userId.classList.add("focus");
@@ -35,13 +40,11 @@ const loginBtnHandler = (event) => {
       "아이디를 입력해주세요.",
       userPwd
     );
-    secondErrorMsg ? userPwd.classList.remove("focus") : null;
-    secondErrorMsg ? removeErrorMsg(secondErrorMsg) : null;
+    secondErrorMsg ? checkFocusAndErrorMsg(userPwd, secondErrorMsg) : null;
     return;
   } else if (userId.value.trim() && !userPwd.value.trim()) {
     // 비밀번호 미입력 시
-    userId.classList.remove("focus");
-    removeErrorMsg(firstErrorMsg);
+    checkFocusAndErrorMsg(userId, firstErrorMsg);
     userPwd.classList.add("focus");
     createErrorMsg(
       secondErrorMsg,
@@ -59,11 +62,7 @@ const loginBtnHandler = (event) => {
       "아이디 혹은 비밀번호가 일치하지 않습니다.",
       userPwd.nextSibling
     );
-
-    if (firstErrorMsg) {
-      userId.classList.remove("focus");
-      removeErrorMsg(firstErrorMsg);
-    } else return;
+    firstErrorMsg ? checkFocusAndErrorMsg(userId, firstErrorMsg) : null;
   }
 };
 

@@ -29,7 +29,6 @@ header {
     position: relative;
 }
 
-
 .header-text {
     color: #000;
     font-size: 16px;
@@ -93,22 +92,26 @@ header {
 #user-id {
     width: 472px;
     height: 50px;
+    padding-left: 15px;
 
     border-radius: 5px;
     border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
     background: #FFF;
     position: relative;
+    box-sizing: border-box;
 }
 
 #user-pw {
     width: 472px;
     height: 50px;
     margin-top: 10px;
+    padding-left: 15px;
 
     border-radius: 5px;
     border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
     background: #FFF;
     position: relative;
+    box-sizing: border-box;
 }
 
 ::placeholder {
@@ -129,14 +132,40 @@ input:focus::placeholder {
     color: transparent;
 }
 
+.input-area 
+
 /* 체크박스 */
 .checkbox-area {
     margin: 17px 351px 21px 28px;
 }
 
-.login-checkbox {
-    /* checkbox styling reset */
-    /* visibility: hidden; */
+.checkbox-text {
+    user-select: none;
+}
+
+.login-checkbox[type = "checkbox"] + label::before,
+.login-checkbox[type = "checkbox"]:checked + label::before {
+    content: '';
+
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    margin-right: 5px;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.login-checkbox[type="checkbox"] + label::before {
+    content: '';
+    background-image: url("../images/check-box-default.svg");
+}
+
+.login-checkbox[type="checkbox"]:checked + label::before {
+    content: '';
+    background-image: url("../images/checked-box-checked.svg");
 }
 
 .checkbox-text {
@@ -145,12 +174,6 @@ input:focus::placeholder {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-
-/* 체크박스 커스텀 스타일링 미구현 */
-.checkbox-area::before {
-    background-image: url("../images/check-box-default.svg") no-repeat 22px 22px;
-    content:'';
 }
 
 /* 로그인 버튼 */
@@ -181,22 +204,6 @@ input:focus::placeholder {
     font-weight: 400;
     line-height: normal;
 }
-
-/* 가상요소 사용시 | 전후 공백에 마우스를 hover할시 커서가 pointer로 바뀌어 span으로 추가 */
-/* .findInfo::before {
-    content: '|';
-    margin-right: 12px;
-    margin-left: 12px;
-
-    color:#767676;
-    font-family: 'SpoqaHanSansNeo', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    cursor: default;
-} */
 
 /* ----또는---- divider */
 .or-divider {

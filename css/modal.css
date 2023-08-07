@@ -27,7 +27,7 @@
 
 .title {
     font-size: 1rem;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 3.625rem;
     text-align: center;
 }
@@ -52,7 +52,7 @@
 }
 
 .login-section p {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 1.25rem;
     padding-top: 2px;
     padding-bottom: 24px;
@@ -90,21 +90,23 @@
 .login-form .message {
     color: red;
     font-size: 14px;
+    font-weight: 400;
     padding: 0;
     margin-top: 6px;
+    margin-left: 4px;
 }
 
 
 /*로그인유지 체크박스 커스텀*/
-.check-keep label {
+.check-keep label[for="keep"] {
     color: var(--gray);
-    font-weight: medium;
     display: flex;
     align-items: center;
     gap: 8px;
     cursor: pointer;
     margin-top: 1rem;
     width: fit-content;
+    font-weight: 500;
 }
 
 .check-keep label::before{
@@ -115,6 +117,7 @@
     border: 1px solid var(--gray);
     border-radius: 50%;
     background: url(../img/check.svg) no-repeat 50% 50%;
+    margin-left: 4px;
 }
 
 .check-keep input:checked+label::before {
@@ -126,6 +129,7 @@
 .login-section .loginBtn{
     margin: 20px 0;
     font-size: 18px;
+    font-weight: 700;
     height: 50px;
 }
 

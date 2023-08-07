@@ -1,10 +1,5 @@
 /* font-import ----------------------------------*/
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 /* reset-css ------------------------------------*/
 .a11y-hidden {
@@ -43,8 +38,8 @@ input,
 input:focus,
 textarea,
 textarea:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
 /* common-css-----------------------------------*/
 :root {
@@ -70,7 +65,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 400;
 }
 
 .center {

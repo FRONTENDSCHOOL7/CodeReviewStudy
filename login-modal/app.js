@@ -57,6 +57,11 @@ const loginBtnHandler = (event) => {
       "아이디 혹은 비밀번호가 일치하지 않습니다.",
       userPwd.nextSibling
     );
+
+    if (firstErrorMsg) {
+      userId.classList.remove("focus");
+      removeErrorMsg(firstErrorMsg);
+    } else return;
   }
 };
 

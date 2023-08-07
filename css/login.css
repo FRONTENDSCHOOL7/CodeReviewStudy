@@ -75,6 +75,7 @@ body {
 }
 
 /* 로그인 상태 유지 체크박스 */
+
 .login-state input[type="checkbox"] + label::before,
 .login-state input[type="checkbox"]:checked + label:before {
   content: "";
@@ -89,10 +90,21 @@ body {
   background-position: 50%;
 
   vertical-align: bottom;
+
+  cursor: pointer;
 }
 .login-state input[type="checkbox"] + label:before {
   background-image: url("../imgs/login-checkbox.svg");
 }
+.login-state input[type="checkbox"] + label:hover:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #2668be;
+}
+/* .login-state input[type="checkbox"] + label:before:focus-visible {
+  outline: 2px solid #767676;
+  outline-offset: 2px;
+} */
+/* hover랑 focus 밑으로 내리기 */
 .login-state input[type="checkbox"]:checked + label:before {
   background-image: url("../imgs/login-checked.svg");
 }
@@ -114,23 +126,32 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.login-button:hover,
+.login-button:focus-visible {
+  outline: 3px solid #2668be;
+  outline-offset: 1px;
+}
 
 /* 회원가입,아이디/비밀번호 찾기 */
 .find-user-button-box {
   text-align: center;
 }
-.find-user-button-box button {
+.find-user-button-box a {
   color: #767676;
   font-size: 14px;
-}
-.find-user-button-box button:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 .find-user-button-box span {
   display: inline-block;
   color: #767676;
   margin: 0 12px;
+}
+.find-user-button-box a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.find-user-button-box a:focus-visible {
+  outline: 2px solid #767676;
+  outline-offset: 2px;
 }
 
 /* 또는 */
@@ -192,10 +213,42 @@ body {
   background-image: url(../imgs/kakao.svg);
 }
 
+.google:hover,
+.google:focus-visible {
+  outline: 3px solid #767676;
+  outline-offset: 1px;
+}
+.facebook:hover,
+.facebook:focus-visible {
+  outline: 3px solid #2d9cdb;
+  outline-offset: 1px;
+}
+.naver:hover,
+.naver:focus-visible {
+  outline: 3px solid #00bf18;
+  outline-offset: 1px;
+}
+.kakao:hover,
+.kakao:focus-visible {
+  outline: 3px solid #f2c94c;
+  outline-offset: 1px;
+}
+
 /* 로그인 닫기 버튼 위치 */
 .login-close-button {
   position: absolute;
-  /* top: 50%; */
-  top: 22px;
+  top: 20px;
   right: 24px;
+}
+.login-close-button:focus-visible {
+  outline: 2px solid gray;
+  outline-offset: 2px;
+}
+.login-close-button svg {
+  vertical-align: middle;
+}
+
+.login-close-button:hover path {
+  transition: all 0.5s;
+  stroke-width: 3;
 }

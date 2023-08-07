@@ -33,3 +33,9 @@
   font-size: 22px;
   font-weight: 700;
 }
+
+.login-button:hover,
+.login-button:focus-visible {
+  outline: 3px solid #2668be;
+  outline-offset: 1px;
+}

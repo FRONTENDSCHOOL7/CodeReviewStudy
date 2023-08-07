@@ -1,0 +1,278 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body {
+  margin: 0;
+}
+h1,
+h2,
+p,
+input,
+div,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+button {
+  font: inherit;
+  border: none;
+}
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+button:enabled {
+  cursor: pointer;
+}
+
+/* CSS 적용 */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.wrapper {
+  width: 520px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+header {
+  width: 520px;
+  height: 58px;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header a {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section1 > p {
+  flex-shrink: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 26px;
+  padding-left: 24px;
+}
+.section1 [type="text"] {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 0 15px 16px;
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 2px solid var(--c-4-c-4-c-4, #f4492e);
+  background: #fff;
+  margin-top: 24px;
+}
+.section1 [type="password"] {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 0 15px 16px;
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  background: #fff;
+}
+#pw-input::placeholder {
+  font-weight: 500;
+}
+.section1 .id_err {
+  padding: 0;
+  margin: 6px 0 10px 28px;
+  color: #f4492e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section1 .pw_err {
+  padding: 0;
+  margin: 10px 0 13px 28px;
+  color: #f4492e;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.check {
+  display: flex;
+  padding-left: 28px;
+  padding-bottom: 21px;
+}
+.check_msg {
+  display: inline-block;
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 8px;
+}
+.ck:checked + svg circle {
+  fill: #2f80ed;
+  stroke: white;
+}
+.ck:checked + svg path {
+  stroke: white;
+}
+.section1 button {
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2f80ed;
+  color: #fff;
+}
+.group {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.group ul {
+  display: flex;
+}
+.group a {
+  cursor: pointer;
+}
+.group li {
+  justify-content: center;
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #767676;
+}
+.group .join::after {
+  display: inline-block;
+  content: "|";
+  width: 4px;
+  height: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* 또는 */
+.or {
+  display: flex;
+  justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 28px;
+}
+.or p {
+  position: relative;
+  width: 472px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.or::after {
+  position: absolute;
+  transform: translateY(-50%);
+  content: "또는";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #767676;
+  background-color: white;
+  padding: 0 13px;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+.section2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--767676, #767676);
+  background: #fff;
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.section2 .google {
+  background-image: url("../images/google.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: 767676;
+  margin-bottom: 10px;
+}
+.section2 .facebook {
+  background-image: url("../images/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #2d9cdb;
+  margin-bottom: 10px;
+}
+.section2 .naver {
+  background-image: url("../images/naver.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #00bf18;
+  margin-bottom: 10px;
+}
+.section2 .kakao {
+  background-image: url("../images/kakao.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #f2c94c;
+  margin-bottom: 25px;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}

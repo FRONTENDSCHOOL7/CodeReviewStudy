@@ -117,6 +117,7 @@ body {
   padding: 6px 0 10px 0.3em;
   color: var(--warn-color);
   font-size: 14px;
+  font-weight: 400;
 }
 /* section1 custom-check-box */
 .section1 .check-box {

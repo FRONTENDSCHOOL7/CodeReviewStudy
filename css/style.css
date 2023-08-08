@@ -81,6 +81,8 @@ font-family: 'SpoqaHan'
   width: 16px;
   height: 16px;
   margin: 2px 24px auto auto;
+
+  cursor: pointer;
 }
 
 
@@ -160,10 +162,6 @@ h2 {
   font-size: 16px;
   font-weight: 500;
   margin-left: 30px;
-}
-
-input[type='checkbox'] {
-  display: none;
 }
 
 input[type='checkbox'] + label {

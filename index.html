@@ -27,20 +27,20 @@
         <main class="main">
             <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
 
-            <div class="login-form">
+            <form class="login-form">
                 <input type="text" placeholder="아이디">
                 <span>아이디를 입력해 주세요.</span>
 
                 <input type="text" placeholder="비밀번호">
                 <span>아이디 혹은 비밀번호가 일치하지 않습니다.</span>
-            </div>
+            </form>
 
-            <div class="keep-login">
-                <input type="checkbox" id="check">
+            <form class="keep-login">
+                <input type="checkbox" id="check" class="a11y-hidden">
                 <label for="check" class="check-label">
                     <span>로그인 상태 유지</span>
                 </label>
-            </div>
+            </form>
 
             <button class="login-submit" type="submit">로그인</button>
 
@@ -56,10 +56,10 @@
 
 
         <div class="way-to-login">
-            <button class="google" type="submit">구글 계정으로 로그인</button>
-            <button class="facebook" type="submit">페이스북 계정으로 로그인</button>
-            <button class="naver" type="submit">네이버 계정으로 로그인</button>
-            <button class="kakao" type="submit">카카오톡 계정으로 로그인</button>
+            <button class="google" type="button">구글 계정으로 로그인</button>
+            <button class="facebook" type="button">페이스북 계정으로 로그인</button>
+            <button class="naver" type="button">네이버 계정으로 로그인</button>
+            <button class="kakao" type="button">카카오톡 계정으로 로그인</button>
         </div>
     </article>
 </body>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weniv Login</title>
+    <link rel = "stylesheet" href = "css/common.css" />
+    <link rel = "stylesheet" href = "css/login_page.css" />
+</head>
+
+<body>
+    <section>
+        <div class = "modal-container">
+            <header> 
+                <h1 class = "header-text default-font">로그인 또는 회원가입</h1> 
+            </header>
+            <main class = "main-container">
+                <div class = "input-area">
+                    <h2 class = "default-font">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+                    <form>
+                        <label for = "user-id" ></label>
+                        <input type = "text" id = "user-id" placeholder = "아이디">
+
+                        <!-- <div class = "warning-text">아이디가 입력되지 않았습니다</div> -->
+
+                        <label for = "user-pw" ></label>
+                        <input type = "text" id = "user-pw" placeholder = "패스워드">
+
+                        <div class = "checkbox-area">
+                            <input class = "login-checkbox a11y-hidden" type = "checkbox" name = "maintain-login" id = "maintain-login">
+                            <label class = "checkbox-text default-font" for = "maintain-login">로그인 상태 유지</label>
+                        </div>
+
+                        <button class = "login-button" type = "submit">
+                            로그인
+                        </button>
+                    </form>
+
+                    
+                
+                    <div class = "signup-findInfo default-font">
+                        <a href = "#">
+                            <span>회원가입</span>
+                        </a>
+                        <span>|</span>
+                        <a href = "#">
+                            <span>아이디/비밀번호찾기</span>
+                        </a>
+                    </div>
+                </div>
+
+                <p class = "or-divider default-font">또는</p>
+
+                <ul class = "quick-login-buttons">
+                    <li class = "google lists-border">
+                        <button type = "button">
+                            <img src = "./images/google-logo.svg" alt = "google-logo" />
+                            <span>구글 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "facebook lists-border">
+                        <button type = "button">
+                            <img src = "./images/fb-logo.svg" alt = "google-logo" />
+                            <span>페이스북 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "naver lists-border">
+                        <button type = "button">
+                            <img src = "./images/naver-logo.svg" alt = "google-logo" />
+                            <span>네이버 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "kakaotalk lists-border">
+                        <button type = "button">
+                            <img src = "./images/kakao-logo.svg" alt = "google-logo" />
+                            <span>카카오 계정으로 로그인</span>
+                        </button>
+                    </li>
+                </ul>
+            </main>
+            <a href = "index.html"><img class = "close-login-modal" src = "images/close.svg" alt = "crosshair-modal-close" /></a>
+        </div>
+    </section>
+</body>
+</html> 

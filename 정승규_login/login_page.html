@@ -13,8 +13,7 @@
     <section>
         <div class = "modal-container">
             <header> 
-                <span class = "header-text default-font">로그인 또는 회원가입</span> 
-                <a href = "index.html"><img src = "images/close.svg" alt = "" /></a>
+                <h1 class = "header-text default-font">로그인 또는 회원가입</h1> 
             </header>
             <main class = "main-container">
                 <div class = "input-area">
@@ -32,11 +31,13 @@
                             <input class = "login-checkbox a11y-hidden" type = "checkbox" name = "maintain-login" id = "maintain-login">
                             <label class = "checkbox-text default-font" for = "maintain-login">로그인 상태 유지</label>
                         </div>
+
+                        <button class = "login-button" type = "submit">
+                            로그인
+                        </button>
                     </form>
 
-                    <button class = "login-button" type = "button">
-                        <span class = "default-font">로그인</span>
-                    </button>
+                    
                 
                     <div class = "signup-findInfo default-font">
                         <a href = "#">
@@ -78,6 +79,7 @@
                     </li>
                 </ul>
             </main>
+            <a href = "index.html"><img class = "close-login-modal" src = "images/close.svg" alt = "crosshair-modal-close" /></a>
         </div>
     </section>
 </body>

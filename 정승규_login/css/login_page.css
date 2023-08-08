@@ -1,15 +1,17 @@
 /* main page centering */
 section {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .modal-container {
     max-width: 520px;
     max-height: 712px;
+    margin: auto;
+
     border-radius: 10px;
     border: 2px solid #C4C4C4;
     background: #FFF;
@@ -37,18 +39,21 @@ header {
     line-height: normal;
 }
 
-.modal-container img {
+.close-login-modal {
     width: 16px;
     height: 16px;
+    object-fit: contain;
 
     position: absolute;
     left: 480px;
     top: 22px;
     right: 24px;
+    bottom: 698px;
 }
 
+
 .main-container {
-    height: 653px;
+    /* height: 653px; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
@@ -116,7 +121,7 @@ header {
 
 ::placeholder {
     position: absolute;
-    top: 15px;
+    top: 13px;
     bottom: 15px;
     left: 16px;
 
@@ -140,17 +145,15 @@ input:focus::placeholder {
 }
 
 .checkbox-text {
+    white-space: nowrap;
     user-select: none;
+    overflow: hidden;
 }
 
 .login-checkbox[type = "checkbox"] + label::before,
 .login-checkbox[type = "checkbox"]:checked + label::before {
     content: '';
-
     display: inline-block;
-
-    width: 22px;
-    height: 22px;
     vertical-align: bottom;
     margin-right: 5px;
 
@@ -159,12 +162,13 @@ input:focus::placeholder {
 }
 
 .login-checkbox[type="checkbox"] + label::before {
-    content: '';
+    width: 22px;
+    height: 22px;
+    
     background-image: url("../images/check-box-default.svg");
 }
 
 .login-checkbox[type="checkbox"]:checked + label::before {
-    content: '';
     background-image: url("../images/checked-box-checked.svg");
 }
 
@@ -182,9 +186,8 @@ input:focus::placeholder {
     height: 50px;
     border-radius: 5px;
     background: #2F80ED;
-}
 
-.login-button span {
+    font-family: 'SpoqaHanSansNeo', sans-serif;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -240,6 +243,7 @@ input:focus::placeholder {
     justify-content: space-evenly;
 
     gap: 10px; 
+    margin-bottom: 20px;
 }
 
 /* lists styling */

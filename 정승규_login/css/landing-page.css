@@ -44,16 +44,14 @@
     border-radius: 5px;
     background: var(--blue-1, #2F80ED);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-text a {
     color: #FFF;
-    font-family: Spoqa Han Sans Neo;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

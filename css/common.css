@@ -32,6 +32,12 @@ img {
   vertical-align: top;
 }
 
+fieldset {
+  margin: unset;
+  border: unset;
+  padding: unset;
+}
+
 /* CSS */
 @font-face {
   font-family: "SpoqaHanSansNeo-Regular";

@@ -36,20 +36,18 @@ body {
 
 /* 아이디,비밀번호 input */
 .login-input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  margin-bottom: 16px;
+  margin: 10px 0 16px;
 }
 .login-input {
-  width: calc(100% - 30px);
+  width: 100%;
   padding: 15px 16px;
 
   border: 1px solid #c4c4c4;
   border-radius: 5px;
 
   font-size: 16px;
+
+  box-sizing: border-box;
 }
 
 /* 아이디,비밀번호 경고 */
@@ -58,17 +56,18 @@ body {
 
   color: #f4492e;
   font-size: 14px;
+  font-weight: 400;
 }
 .warnning-id {
-  margin: 6px 0 0 2px;
+  margin: 6px 0 0 4px;
 }
 .warnning-user {
-  margin: 10px 0 0 2px;
+  margin: 10px 0 0 4px;
 }
 
 /* 로그인 상태 유지 */
 .login-state {
-  margin-bottom: 20px;
+  margin: 0 0 20px 4px;
 
   color: #767676;
   font-weight: 500;

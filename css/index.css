@@ -1,7 +1,8 @@
 /* CSS */
 
 .container {
-  width: 500px;
+  min-width: 0;
+  max-width: 500px;
   padding: 30px;
   margin: 280px auto 0;
   border: 1px solid #c4c4c4;

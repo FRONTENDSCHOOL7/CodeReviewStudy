@@ -6,6 +6,7 @@ body {
 .login-container {
   position: relative;
 
+  min-width: 0;
   width: 520px;
   margin: auto;
 

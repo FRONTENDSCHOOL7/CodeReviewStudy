@@ -27,22 +27,24 @@
         <main class="main">
             <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
 
-            <form class="login-form">
-                <input type="text" placeholder="아이디">
-                <span>아이디를 입력해 주세요.</span>
-
-                <input type="text" placeholder="비밀번호">
-                <span>아이디 혹은 비밀번호가 일치하지 않습니다.</span>
+            <form>
+                <div class="login-form">
+                    <input type="text" placeholder="아이디">
+                    <span>아이디를 입력해 주세요.</span>
+    
+                    <input type="text" placeholder="비밀번호">
+                    <span>아이디 혹은 비밀번호가 일치하지 않습니다.</span>
+                </div>
+    
+                <div class="keep-login">
+                    <input type="checkbox" id="check" class="a11y-hidden">
+                    <label for="check" class="check-label">
+                        <span>로그인 상태 유지</span>
+                    </label>
+                </div>
+    
+                <button class="login-submit" type="submit">로그인</button>
             </form>
-
-            <form class="keep-login">
-                <input type="checkbox" id="check" class="a11y-hidden">
-                <label for="check" class="check-label">
-                    <span>로그인 상태 유지</span>
-                </label>
-            </form>
-
-            <button class="login-submit" type="submit">로그인</button>
 
             <div class="find">
                 <a class="join" href="#">회원가입</a>

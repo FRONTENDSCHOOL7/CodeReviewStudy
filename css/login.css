@@ -75,7 +75,9 @@ body {
 }
 
 /* 로그인 상태 유지 체크박스 */
-
+.login-state label {
+  cursor: pointer;
+}
 .login-state input[type="checkbox"] + label::before,
 .login-state input[type="checkbox"]:checked + label:before {
   content: "";
@@ -90,23 +92,30 @@ body {
   background-position: 50%;
 
   vertical-align: bottom;
-
-  cursor: pointer;
 }
 .login-state input[type="checkbox"] + label:before {
   background-image: url("../imgs/login-checkbox.svg");
 }
-.login-state input[type="checkbox"] + label:hover:before {
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #2668be;
-}
-/* .login-state input[type="checkbox"] + label:before:focus-visible {
-  outline: 2px solid #767676;
-  outline-offset: 2px;
-} */
-/* hover랑 focus 밑으로 내리기 */
 .login-state input[type="checkbox"]:checked + label:before {
   background-image: url("../imgs/login-checked.svg");
+}
+
+/* hover,focus-visible */
+.login-state input[type="checkbox"] + label:hover:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #2668be;
+}
+.login-state input[type="checkbox"]:checked + label:hover:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #10315c;
+}
+.login-state input[type="checkbox"]:focus-visible + label::before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #2668be;
+}
+.login-state input[type="checkbox"]:focus-visible:checked + label:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #10315c;
 }
 
 /* 로그인 버튼 */
@@ -249,6 +258,6 @@ body {
 }
 
 .login-close-button:hover path {
-  transition: all 0.5s;
+  transition: all 0.2s;
   stroke-width: 3;
 }

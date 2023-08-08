@@ -99,15 +99,7 @@ body {
   background-image: url("../imgs/login-checked.svg");
 }
 
-/* hover,focus-visible */
-.login-state input[type="checkbox"] + label:hover:before {
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #2668be;
-}
-.login-state input[type="checkbox"]:checked + label:hover:before {
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #10315c;
-}
+/* focus-visible */
 .login-state input[type="checkbox"]:focus-visible + label::before {
   border-radius: 50%;
   box-shadow: 0 0 0 2px #2668be;
@@ -239,18 +231,15 @@ body {
 /* 로그인 닫기 버튼 위치 */
 .login-close-button {
   position: absolute;
-  top: 20px;
-  right: 24px;
+  top: 6px;
+  right: 8px;
+
+  padding: 12px 14px;
 }
 .login-close-button:focus-visible {
   outline: 2px solid gray;
   outline-offset: 2px;
 }
-.login-close-button svg {
+.login-close-button img {
   vertical-align: middle;
-}
-
-.login-close-button:hover path {
-  transition: all 0.2s;
-  stroke-width: 3;
 }

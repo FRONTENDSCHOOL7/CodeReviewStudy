@@ -120,10 +120,6 @@ body {
 
 /* 로그인 버튼 */
 .login-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 100%;
   padding: 14px 0;
   margin-bottom: 20px;
@@ -186,10 +182,8 @@ body {
   padding: 19px 24px 25px;
 }
 
-.social-login-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.social-login-group li:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 
 .social-login-button {

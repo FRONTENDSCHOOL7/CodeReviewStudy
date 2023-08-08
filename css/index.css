@@ -20,9 +20,7 @@
 }
 
 .login-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
   padding: 17px 0 15px;
 

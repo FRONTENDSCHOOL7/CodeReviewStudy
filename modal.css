@@ -1,0 +1,227 @@
+/* font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+:root {
+  --text-color: #767676;
+  --title-color: black;
+  --border-color: #c4c4c4;
+  --warn-color: #f4492e;
+  --button-color: #2f80ed;
+}
+/* reset */
+body,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+input {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+  border: 0;
+  background: none;
+}
+button:enabled,
+img:hover,
+a:hover {
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+/* layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.modal {
+  width: 520px;
+  max-width: 100%;
+  margin: auto;
+}
+/* css */
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  color: var(--text-color);
+}
+.modal {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  font-size: 16px;
+}
+/* header */
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  justify-content: center;
+  position: relative;
+}
+.header img {
+  width: 16px;
+  position: absolute;
+  right: 24px;
+  top: 23px;
+}
+.header .title {
+  color: var(--title-color);
+  font-weight: 500;
+  padding: 20px 0;
+}
+.main {
+  padding: 26px 24px 25px 24px;
+}
+/* section1 */
+.section1 {
+  margin-bottom: 36px;
+}
+.section1 .subtitle {
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.section1 .login-form {
+  margin: 24px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+[class^="input"] {
+  box-sizing: border-box;
+  padding: 15px 0 15px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+/* warn*/
+.section1 .input-id {
+  border: 2px solid var(--warn-color);
+}
+[class^="warn"] {
+  box-sizing: border-box;
+  padding: 6px 0 10px 0.3em;
+  color: var(--warn-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* section1 custom-check-box */
+.section1 .check-box {
+  display: flex;
+}
+.section1 .check-box .check-hide {
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip-path: inset(50%);
+}
+.section1 .label-check-box {
+  position: relative;
+}
+.section1 .label-check-box::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--text-color);
+  vertical-align: -6px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.check-hide:checked + .label-check-box::before {
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+}
+.section1 .label-check-box::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  left: 8px;
+  top: 8px;
+  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  transform: rotate(-45deg);
+}
+.check-hide:checked + .label-check-box::after {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+/* section1 login-button */
+.section1 .login-button {
+  box-sizing: border-box;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 0;
+  border-radius: 5px;
+  margin-top: 21px;
+}
+/* section1 help-link */
+.section1 .help-link {
+  font-size: 14px;
+  text-align: center;
+}
+.section1 .help-link span {
+  margin: 0 10px;
+}
+/* section2 */
+.section2 {
+  position: relative;
+  padding-top: 28px;
+  border-top: 1px solid var(--border-color);
+}
+.section2::before {
+  position: absolute;
+  content: "또는";
+  padding: 0 13px;
+  background-color: white;
+  font-size: 14px;
+  top: -10px;
+  left: calc(50% - 26px);
+}
+.section2 .btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+[class^="portal-login"] {
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+  padding: 11px 0;
+  text-align: center;
+  font-weight: 500;
+}
+.google {
+  background: url("./img/Google__G__Logo\ 1.svg") no-repeat 12px center;
+  border: 1px solid #767676;
+}
+.facebook {
+  background: url("./img/facebook.svg") no-repeat 12px center;
+  border: 1px solid #2d9cdb;
+}
+.naver {
+  background: url("./img/naver-logo.svg") no-repeat 12px center;
+  border: 1px solid #00bf18;
+}
+.kakao {
+  background: url("./img/message-circle.svg") no-repeat 12px center;
+  border: 1px solid #f2c94c;
+}

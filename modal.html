@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modal.css">
+  <title></title>
+</head>
+
+<body>
+  <article class="modal max-width">
+
+    <!-- header -->
+    <header class="header">
+      <h1 class="title">로그인 또는 회원가입</h1>
+      <img src="./img/close.svg" alt="닫기">
+    </header>
+
+    <main class="main">
+      <section class="section1">
+        <h2 class="subtitle">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+
+        <!-- form -->
+        <form class="login-form">
+          <input class="input-id" id="input-id" type="text" placeholder="아이디">
+          <label for="input-id"></label>
+          <strong class="warn-id">아이디를 입력해 주세요.</strong>
+          <input class="input-pw" id="input-pw" type="text" placeholder="비밀번호">
+          <label for="input-pw"></label>
+          <strong class="warn-pw">아이디 혹은 비밀번호가 일치하지 않습니다.</strong>
+
+          <!-- 로그인 상태 유지 checkbox -->
+          <div class="check-box">
+            <input id="keep-login" class="check-hide" type="checkbox">
+            <label class="label-check-box" for="keep-login">로그인 상태 유지</label>
+          </div>
+
+          <button class="login-button" type="submit">로그인</button>
+        </form>
+
+        <!-- 회원가입 | 아이디/비밀번호 찾기 -->
+        <div class="help-link">
+          <a href="#" class="signup">회원가입</a>
+          <span>|</span>
+          <a href="#" class="find">아이디/비밀번호 찾기</a>
+        </div>
+
+      </section>
+
+      <section class="section2">
+
+        <!-- potal login button -->
+        <ul class="btn-list">
+          <li>
+            <a href="#" class="portal-login google">구글 계정으로 로그인</a>
+          </li>
+          <li>
+            <a href="#" class="portal-login facebook">페이스북 계정으로 로그인</a>
+          </li>
+          <li>
+            <a href="#" class="portal-login naver">네이버 계정으로 로그인</a>
+          </li>
+          <li>
+            <a href="#" class="portal-login kakao">카카오톡 계정으로 로그인</a>
+          </li>
+        </ul>
+
+      </section>
+    </main>
+  </article>
+</body>
+
+</html>

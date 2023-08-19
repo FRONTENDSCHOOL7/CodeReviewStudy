@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="inner-container">
         {/* 회사 이름 , 소셜미디어 링크 */}
         <header className="footer-header">
-          <h2 className="title">Jungle Cinema</h2>
+          <h2 className="footer-title">Jungle Cinema</h2>
           {/* 소셜미디어 링크 */}
           <ul className="social-group" aria-labelledby="소셜 링크 그룹">
             <li>
@@ -35,7 +35,7 @@ const Footer = () => {
         <article className="company">
           <h2 className="a11y-hidden">정글 시네마 회사 정보</h2>
           <dl>
-            <dt className="line company-name">(주) 정글 시네마</dt>
+            <dt className="company-name">(주) 정글 시네마</dt>
             <dt>대표</dt>
             <dd className="line">라이언</dd>
             <dt>사업자 번호</dt>

@@ -24,6 +24,7 @@
   font-size: 24px;
   font-family: "Roboto";
   font-weight: 700;
+  line-height: 28px;
 }
 /* 네비게이션 */
 .main-nav {
@@ -52,6 +53,7 @@
 .main-nav button {
   padding: 10px 5px;
   font-family: "Roboto";
+  line-height: 19px;
 }
 /* 활성화 되고있는 버튼 */
 .button-active {
@@ -88,6 +90,7 @@
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
 
   font-family: "Noto-400";
+  line-height: 19px;
 }
 /* 영화 포스터 */
 .movie-poster {
@@ -106,6 +109,7 @@
   margin-bottom: 12px;
 
   font-family: "Noto-900";
+  line-height: 23px;
 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -186,23 +190,27 @@
   border-radius: 0 0 10px 10px;
 
   font-size: 14px;
-  font-family: "Noto-500";
 
   background: var(--gray-6);
 }
 
 .link-group li {
   width: 100%;
-  text-align: center;
-}
-.link-group a {
-  display: block;
 
   padding: 12px 10px;
+
+  text-align: center;
+
+  font-family: "Noto-500";
+  line-height: 20px;
 }
 
 .trailer-box {
   border-left: 1px solid var(--gray-4);
+}
+.trailer {
+  font-family: "Noto-500";
+  line-height: 20px;
 }
 /* 플레이 이미지 */
 .trailer::before {
@@ -217,5 +225,5 @@
 
   background: url(./MovieImgs/play.svg) no-repeat center;
 
-  vertical-align: top;
+  vertical-align: sub;
 }

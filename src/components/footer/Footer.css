@@ -19,10 +19,11 @@
   margin-bottom: 36px;
   border-bottom: 1px solid var(--input-box);
 }
-.title {
+.footer-title {
   font-size: 22px;
   font-family: "Roboto";
   font-weight: 700;
+  line-height: 26px;
 }
 .social-group {
   display: flex;
@@ -40,6 +41,7 @@
 
   font-size: 14px;
   font-family: "Noto-400";
+  line-height: 20px;
 }
 .company > dl > dt,
 .company > dl > dd {
@@ -49,20 +51,24 @@
   font-family: "Noto-700";
   margin-right: 5px;
 }
-
-.company-name {
+.company .company-name {
   margin: 0;
 }
-.company-info {
+.company .company-name::after {
+  content: "|";
+
+  margin: 0 5px 0 7px;
+
+  font-family: "Noto-400";
+}
+.company .company-info {
   font-family: "Noto-400";
   margin: 0;
 }
-
 .line::after {
   content: "|";
 
   margin: 0 5px;
 
   font-family: "Noto-400";
-  line-height: 20px;
 }

@@ -6,7 +6,7 @@
     "genre": "판타지",
     "star": "9.05",
     "release": "2021.03.27",
-    "actor": "라이캣,소울곰,개리씨",
+    "actor": "라이캣, 소울곰, 개리씨",
     "url": "https://www.inflearn.com/roadmaps/399"
   },
   {
@@ -16,7 +16,7 @@
     "genre": "스릴러",
     "star": "8.25",
     "release": "2021.04.01",
-    "actor": "자바독,개리씨,빙키",
+    "actor": "자바독, 개리씨, 빙키",
     "url": "https://ridibooks.com/books/2773000043?_s=search&_q=%EB%88%88%EB%96%A0%EB%B3%B4%EB%8B%88&_rdt_sid=search&_rdt_idx=8"
   },
   {
@@ -26,7 +26,7 @@
     "genre": "드라마",
     "star": "8.77",
     "release": "2021.04.12",
-    "actor": "캣,파이,썬,뮤라",
+    "actor": "캣, 파이, 썬, 뮤라",
     "url": "https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84"
   },
   {
@@ -36,7 +36,7 @@
     "genre": "로맨스",
     "star": "8.81",
     "release": "2021.04.08",
-    "actor": "파이썬,큐티",
+    "actor": "파이썬, 큐티",
     "url": "https://www.inflearn.com/course/pyqt-gui"
   },
   {
@@ -46,7 +46,7 @@
     "genre": "드라마",
     "star": "9.88",
     "release": "2021.04.15",
-    "actor": "NGINX,노션",
+    "actor": "NGINX, 노션",
     "url": ""
   },
   {
@@ -56,7 +56,7 @@
     "genre": "드라마",
     "star": "9.25",
     "release": "2021.04.17",
-    "actor": "라이캣,자바독,소울곰",
+    "actor": "라이캣, 자바독, 소울곰",
     "url": ""
   },
   {
@@ -66,7 +66,7 @@
     "genre": "판타지액션",
     "star": "8.56",
     "release": "2021.04.05",
-    "actor": "개리씨,파이썬",
+    "actor": "개리씨, 파이썬",
     "url": "https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EA%B2%8C%EC%9E%84-%EC%96%B4%EB%93%9C%EB%B2%A4%EC%B3%90"
   },
   {
@@ -76,7 +76,7 @@
     "genre": "로맨스",
     "star": "9.02",
     "release": "2021.04.12",
-    "actor": "라이캣,개리씨,자바독",
+    "actor": "라이캣, 개리씨, 자바독",
     "url": ""
   }
 ]

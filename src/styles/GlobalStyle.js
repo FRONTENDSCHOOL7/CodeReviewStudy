@@ -1,3 +1,14 @@
+import { createGlobalStyle } from "styled-components";
+
+import {
+  NotoSansKRBlack,
+  NotoSansKRBold,
+  NotoSansKRMedium,
+  NotoSansKRRegular,
+  RobotoRegular,
+} from "../assets/fonts/fontComponent";
+
+const GlobalStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,3 +160,42 @@ button {
   border: 0;
   padding: 0;
 }
+
+/* color */
+:root {
+  --input-box: #c4c4c4;
+  --gray-2: #4f4f4f;
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+  --gray-6: #f2f2f2;
+}
+
+/* font */
+@font-face {
+  font-family: "Roboto";
+  src: url(${RobotoRegular}) format("truetype");
+}
+
+@font-face {
+  font-family: "Noto-900";
+  src: url(${NotoSansKRBlack}) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto-700";
+  src: url(${NotoSansKRBold}) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto-500";
+  src: url(${NotoSansKRMedium}) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto-400";
+  src: url(${NotoSansKRRegular}) format("opentype");
+
+} 
+`;
+
+export default GlobalStyle;

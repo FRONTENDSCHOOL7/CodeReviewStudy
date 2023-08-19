@@ -1,11 +1,14 @@
-import "./styles/Reset.css";
-import "./styles/Font.css";
-import "./styles/Color.css";
-
 import Home from "./page/Home";
 
+import GlobalStyle from "./styles/GlobalStyle";
+
 function App() {
-  return <Home />;
+  return (
+    <>
+      <GlobalStyle />
+      <Home />
+    </>
+  );
 }
 
 export default App;

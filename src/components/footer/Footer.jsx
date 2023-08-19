@@ -34,7 +34,7 @@ const Footer = () => {
         {/* 회사 정보 */}
         <article className="company">
           <h6 className="a11y-hidden">정글 시네마 회사 정보</h6>
-          <div>
+          {/* <div>
             <b className="line">(주) 정글 시네마</b>
             <span className="line">
               <b>대표</b> 라이언
@@ -46,7 +46,20 @@ const Footer = () => {
             <address>
               <b>주소</b> 서울특별시
             </address>
-          </div>
+          </div> */}
+          <dl>
+            <dt className="line company-name">(주) 정글 시네마</dt>
+            <dt>대표</dt>
+            <dd className="line">라이언</dd>
+            <dt>사업자 번호</dt>
+            <dd className="line">000-0000-0000</dd>
+            <dt className="line company-info">광고 영화 및 비디오물 제작업</dt>
+            <dt>주소</dt>
+            <dd>
+              <address>서울특별시</address>
+            </dd>
+          </dl>
+
           <img src="footerImgs/jungle.png" alt="The Jungle logo" />
         </article>
       </div>

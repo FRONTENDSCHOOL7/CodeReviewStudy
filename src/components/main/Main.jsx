@@ -68,12 +68,12 @@ const Main = () => {
               {/* <div className="over_text_cover"> */}
               <h3 className="movie_name">{item.title}</h3>
               {/* </div> */}
-              <div className="movie_detail">
-                <div className="movie_genre">{item.genre}</div>
-                <div className="movie_star">{item.star}</div>
-                <div className="movie_release">{item.release}</div>
-                <div className="movie_actor">{item.actor}</div>
-              </div>
+              <dl className="movie_detail">
+                <dt className="movie_genre">{item.genre}</dt>
+                <dt className="movie_star">{item.star}</dt>
+                <dt className="movie_release">{item.release}</dt>
+                <dt className="movie_actor">{item.actor}</dt>
+              </dl>
               {/* 외부 링크 */}
               <ul className="link_group">
                 <li>

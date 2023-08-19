@@ -137,17 +137,17 @@
 
   font-size: 13px;
 }
-.movie_detail div:not(:last-child) {
-  margin-bottom: 5px;
-}
-
 .movie_star {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.movie_detail div::before {
+.movie_detail dt:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.movie_detail dt::before {
   margin-right: 5px;
 
   color: var(--gray-3);

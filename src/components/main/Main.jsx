@@ -37,7 +37,7 @@ const Main = () => {
   return (
     <main className="main_container">
       <header className="main_header">
-        <h1 className="main_title">정글 시네마 영화 목록</h1>
+        <h2 className="main_title">정글 시네마 영화 목록</h2>
         {/* 네비게이션 */}
         <nav>
           <ul className="main_nav">

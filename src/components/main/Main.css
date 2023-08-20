@@ -1,0 +1,229 @@
+/* 정글 시네마 영화 목록 */
+.main-container {
+  max-width: 1060px;
+  padding: 0 30px 30px;
+  margin: 91px auto 135px;
+
+  border: 2px solid var(--gray-4);
+  border-radius: 15px;
+
+  background: var(--gray-6);
+}
+
+/* 제목과 네비게이션*/
+.main-header {
+  padding: 41px 0 18px;
+
+  text-align: center;
+}
+/* 제목 */
+.main-title {
+  display: inline-block;
+  margin-bottom: 37px;
+
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 28px;
+}
+/* 네비게이션 */
+.main-nav {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  padding-top: 18px;
+  margin: 0 10%;
+}
+/* 제목과 네비게이션을 나누는 선 */
+.main-nav::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--gray-4);
+}
+.main-nav button {
+  padding: 10px 5px;
+  font-family: "Roboto";
+  line-height: 19px;
+}
+/* 활성화 되고있는 버튼 */
+.button-active {
+  font-weight: 900;
+}
+
+/* article */
+.main-content {
+  padding: 26px 27px 30px;
+
+  border: 2px solid var(--gray-4);
+  border-radius: 15px;
+
+  background-color: #fff;
+}
+/* ul 반응형을 위한 그리드 */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px 23px;
+}
+/* li 영화 목록 */
+.movie-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 19px 20px 60px;
+
+  border: 2px solid var(--gray-4);
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+  font-family: "Noto-400";
+  line-height: 19px;
+}
+/* 영화 포스터 */
+.movie-poster {
+  margin-bottom: 11px;
+
+  border: 1px solid var(--gray-4);
+  border-radius: 10px;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* 영화제목 */
+/* .over-text-cover {
+  overflow: hidden;
+} */
+.movie-name {
+  margin-bottom: 12px;
+
+  font-family: "Noto-900";
+  line-height: 23px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* .movie-name:hover {
+  animation: leftToRight 3s infinite ease-in-out;
+}
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0%);
+    left: 0%;
+
+    text-overflow: initial;
+    overflow: unset;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+    text-overflow: initial;
+    overflow: unset;
+  }
+} */
+
+/* 영화 관련 내용을 담음 */
+.movie-detail {
+  position: relative;
+
+  font-size: 13px;
+}
+.movie-star {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.movie-detail dt:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.movie-detail dt::before {
+  margin-right: 5px;
+
+  color: var(--gray-3);
+}
+.movie-genre::before {
+  content: "개요";
+}
+/* 별 이미지 */
+.movie-star::before {
+  content: "평점";
+
+  padding-right: 18px;
+
+  background: url(./MovieImgs/star.svg) no-repeat 28px 4px / 12px;
+}
+.movie-release::before {
+  content: "개봉";
+}
+.movie-actor::before {
+  content: "출연";
+}
+
+/* 예매와 예고편 박스 */
+.link-group {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  border-top: 1px solid var(--gray-4);
+  border-radius: 0 0 10px 10px;
+
+  font-size: 14px;
+
+  background: var(--gray-6);
+}
+
+.link-group li {
+  width: 100%;
+
+  padding: 12px 10px;
+
+  text-align: center;
+
+  font-family: "Noto-500";
+  line-height: 20px;
+}
+
+.trailer-box {
+  border-left: 1px solid var(--gray-4);
+}
+.trailer {
+  font-family: "Noto-500";
+  line-height: 20px;
+}
+/* 플레이 이미지 */
+.trailer::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 2px;
+
+  background: url(./MovieImgs/play.svg) no-repeat center;
+
+  vertical-align: sub;
+}

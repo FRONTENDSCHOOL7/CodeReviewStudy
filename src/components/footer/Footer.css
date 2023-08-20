@@ -1,0 +1,74 @@
+/* footer */
+.footer-container {
+  width: 100%;
+  padding: 53px 0 38px;
+
+  background: var(--gray-6);
+}
+.inner-container {
+  width: 70%;
+  margin: auto;
+}
+
+/* title, social */
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 42px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--input-box);
+}
+.footer-title {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 26px;
+}
+.social-group {
+  display: flex;
+  gap: 22px;
+}
+
+/* 회사정보 */
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  color: var(--gray-2);
+
+  font-size: 14px;
+  font-family: "Noto-400";
+  line-height: 20px;
+}
+.company > dl > dt,
+.company > dl > dd {
+  display: inline-block;
+}
+.company > dl > dt {
+  font-family: "Noto-700";
+  margin-right: 5px;
+}
+.company .company-name {
+  margin: 0;
+}
+.company .company-name::after {
+  content: "|";
+
+  margin: 0 5px 0 7px;
+
+  font-family: "Noto-400";
+}
+.company .company-info {
+  font-family: "Noto-400";
+  margin: 0;
+}
+.line::after {
+  content: "|";
+
+  margin: 0 5px;
+
+  font-family: "Noto-400";
+}

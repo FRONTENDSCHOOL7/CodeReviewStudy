@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.img_clock {
+  position: relative;
+  width: 22.5rem;
+  height: 22.5rem;
+  padding: 2rem;
+}
+.img_title {
+  width: 56.4rem;
+  height: auto;
+  position: absolute;
+}

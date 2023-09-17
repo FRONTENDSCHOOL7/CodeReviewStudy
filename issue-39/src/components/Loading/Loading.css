@@ -1,0 +1,16 @@
+.field_loading {
+  margin-bottom: 60px;
+}
+.img_loading {
+  max-width: 100px;
+  max-height: 100px;
+  animation: rotate 1.1s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

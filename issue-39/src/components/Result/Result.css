@@ -1,0 +1,33 @@
+.field_result {
+  color: white;
+  line-height: 1.5;
+}
+.field_result_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result_text {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result_goal,
+.result_time {
+  padding: 0 20px;
+  font-size: 7rem;
+}
+.field_buttons {
+  margin: 70px 0 80px 0;
+}
+.field_buttons .train {
+  color: var(--main-color1);
+  background-color: var(--main-color2);
+}
+.field_buttons .share {
+  margin-left: 20px;
+  color: var(--main-color1);
+  background-color: white;
+}

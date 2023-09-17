@@ -1,0 +1,29 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.quote {
+  font-family: "OTEnjoystoriesBA";
+  color: var(--quote-color);
+  font-size: 3.6rem;
+  margin-bottom: 50px;
+}
+.explain-wrap {
+  display: flex;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+.explain-wrap img {
+  padding-bottom: 7rem;
+}
+.explain {
+  margin: 0 30px 0 30px;
+  padding: 0 0 50px 0;
+}
+.explain strong {
+  font-weight: bold;
+  font-size: 2rem;
+}

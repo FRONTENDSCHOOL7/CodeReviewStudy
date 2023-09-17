@@ -1,0 +1,43 @@
+.form {
+  font-size: 2rem;
+  color: white;
+}
+.form .form_text {
+  padding-bottom: 20px;
+}
+[class^="input"] {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 0 15px;
+  max-width: 20rem;
+}
+[class^="input"]::placeholder {
+  color: #babcbe;
+}
+.button_submit {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--main-color1);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  background: var(--main-color2);
+  cursor: pointer;
+}
+.field_button {
+  padding: 70px 0 60px 0;
+  position: relative;
+}
+.field_button .submit {
+  color: var(--main-color1);
+  background-color: var(--main-color2);
+}
+.img_pointer {
+  position: absolute;
+  bottom: 4rem;
+  vertical-align: top;
+}

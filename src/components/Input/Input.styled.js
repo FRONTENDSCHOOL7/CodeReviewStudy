@@ -20,7 +20,7 @@ export const Words = styled.p`
   align-items: center;
   justify-content: center;
 
-  font-family: gmarket;
+  font-family: gmarketMedium;
   font-size: 24px;
   color: #fff;
   font-weight: 400;
@@ -36,7 +36,7 @@ export const InputTag = styled.input`
   height: 57px;
   margin: 0 17px;
 
-  font-family: gmarket;
+  font-family: gmarketMedium;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -53,11 +53,7 @@ export const InputTag = styled.input`
   }
 
   &::placeholder {
-    font-family: gmarket;
-    text-align: center;
-    font-size: 24px;
     color: #babcbe;
-    font-weight: 400;
 
     @media (max-width: 767px) {
       font-size: 14px;
@@ -78,7 +74,7 @@ export const Btn = styled.button`
   padding: 21px 49px;
   background: #fcee21;
 
-  font-family: gmarket;
+  font-family: gmarketBold;
   text-align: center;
   font-size: 24px;
   color: #5b2386;

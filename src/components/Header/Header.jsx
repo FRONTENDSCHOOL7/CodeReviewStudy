@@ -8,7 +8,6 @@ import {
   Quote,
   QuoteBox,
   StrongSpan,
-  Test,
   Title,
 } from './header.styled';
 

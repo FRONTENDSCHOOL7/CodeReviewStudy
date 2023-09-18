@@ -90,7 +90,7 @@ export const QuoteBox = styled.div`
 export const Quote = styled.h2`
   padding-bottom: 18px;
 
-  font-family: gmarket;
+  font-family: gmarketMedium;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -102,6 +102,7 @@ export const Quote = styled.h2`
 `;
 
 export const StrongSpan = styled.span`
+  font-family: gmarketBold;
   font-size: 24px;
   font-weight: 700;
 

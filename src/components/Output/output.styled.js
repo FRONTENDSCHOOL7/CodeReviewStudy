@@ -34,18 +34,13 @@ export const OutputWords = styled(Words)`
 export const StrongText = styled.strong`
   padding: 0 12px;
 
-  font-family: gmarket;
+  font-family: gmarketMedium;
   font-size: 72px;
   color: #fff;
   font-weight: 700;
 
   @media (max-width: 767px) {
-    color: #fff;
-    font-family: gmarket;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
   }
 `;
 
@@ -58,7 +53,7 @@ export const GoBtn = styled.button`
   background: #fcee21;
   padding: 21px 49px;
 
-  font-family: gmarket;
+  font-family: gmarketBold;
   font-size: 24px;
   color: #5b2386;
   font-weight: 700;
